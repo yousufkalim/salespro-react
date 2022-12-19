@@ -10,6 +10,7 @@ import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ListItemButton } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 // Component
 export default function SecondaryNavbar() {
@@ -21,12 +22,20 @@ export default function SecondaryNavbar() {
     <div className="secondaryNavbar">
       <div className="navbarLeftDiv">
         <div className="navbarLogoDiv">
-          <img className="navbarLogo" src={Logo} alt="logo" />
+          <Link to="/">
+            <img className="navbarLogo" src={Logo} alt="logo" />
+          </Link>
         </div>
         <div className="navbarMenuDiv" id="secNavbarMenuDiv">
-          <p>Home</p>
-          <p>Features</p>
-          <p>Pricing</p>
+          <Link className="navbarLink" to="/">
+            Home
+          </Link>
+          <Link className="navbarLink" to="/features">
+            Features
+          </Link>
+          <Link className="navbarLink" to="/pricing">
+            Pricing
+          </Link>
           <p>Enterprise</p>
         </div>
       </div>
@@ -55,7 +64,9 @@ export default function SecondaryNavbar() {
               stroke-linejoin="round"
             />
           </svg>
-          <p>Signup</p>
+          <Link to="/signup" style={{ textDecoration: 'none', color: '#ffffff' }}>
+            Signup
+          </Link>
         </div>
         <div
           className="navbarLoginBtn"
@@ -84,7 +95,9 @@ export default function SecondaryNavbar() {
             />
           </svg>
 
-          <p style={{ color: 'white' }}>Login</p>
+          <Link to="/login" style={{ color: 'white', textDecoration: 'none' }}>
+            Login
+          </Link>
         </div>
       </div>
       <div className="navbarMobMenu">
@@ -94,13 +107,13 @@ export default function SecondaryNavbar() {
         <Collapse className="navbarCollapseDiv" in={open} timeout="auto" unmountOnExit>
           <List className="navbarCollapseListDiv" component="div" disablePadding>
             <ListItemButton className="navbarCollapseListItems">
-              <div>Home</div>
+              <Link to="/">Home</Link>
             </ListItemButton>
             <ListItemButton>
-              <div>Features</div>
+              <Link to="/features"> Features</Link>
             </ListItemButton>
             <ListItemButton>
-              <div>Pricing</div>
+              <Link to="/pricing">Pricing</Link>
             </ListItemButton>
             <ListItemButton>
               <div>Enterprise</div>
@@ -109,10 +122,10 @@ export default function SecondaryNavbar() {
               <div>Contact Us</div>
             </ListItemButton>
             <ListItemButton>
-              <div>Signup</div>
+              <Link to="/signup">Signup</Link>
             </ListItemButton>
             <ListItemButton>
-              <div>Login</div>
+              <Link to="/login">Login</Link>
             </ListItemButton>
           </List>
         </Collapse>

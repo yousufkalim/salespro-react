@@ -63,10 +63,15 @@
   align-items: center;
   text-transform: capitalize;
   color: white;
-  background-color: #ff5c5ad6;
+  background: linear-gradient(
+    93.62deg,
+    rgba(255, 255, 255, 0.05) 5.93%,
+    rgba(255, 255, 255, 0) 96.78%
+  );
   border-radius: 30px;
 
-  padding: 4% 10px;
+  padding: 3%;
+  width: fit-content;
   cursor: pointer;
 }
 .navbarLink {
