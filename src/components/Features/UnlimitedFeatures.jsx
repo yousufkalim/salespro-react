@@ -28,7 +28,7 @@ const sliderName = [
 ];
 
 function UnlimitedFeatures() {
-  const [showCompnent, setShowCompont] = useState(0);
+  const [showCompnent, setShowCompont] = useState(1);
   // const [activeId, setActiveId] = useState(1);
 
   const nextStepsEvent = (i) => {

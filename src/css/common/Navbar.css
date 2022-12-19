@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   background: transparent;
-  position: relative;
+  position: absolute;
   justify-content: space-between;
   z-index: 1300;
 }
@@ -40,7 +40,7 @@
 }
 .navbarRightDiv {
   display: flex;
-  width: 25%;
+  width: 30%;
   align-items: center;
   justify-content: space-between;
 }
@@ -61,8 +61,8 @@
   color: white;
   background-color: #ff5c5ad6;
   border-radius: 30px;
-  padding: 4%;
-  width: 155px;
+
+  padding: 4% 10px;
   cursor: pointer;
 }
 .navbarSignUpBtn {
@@ -125,9 +125,9 @@
   white-space: nowrap;
 }
 @media only screen and (max-width: 1600px) {
-  .secNavbarContactBtn {
+  /* .secNavbarContactBtn {
     padding: 4% 2px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1366px) {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HeroSeciton() {
+function HeroSection() {
   return (
     <div>
       <div className="hero">
@@ -19,4 +19,4 @@ function HeroSeciton() {
   );
 }
 
-export default HeroSeciton;
+export default HeroSection;

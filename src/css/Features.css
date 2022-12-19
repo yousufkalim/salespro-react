@@ -242,6 +242,12 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+.Automation_links_Active {
+  color: #ff403e;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+}
 .Automation_links:hover {
   color: #ff403e;
 }
@@ -638,4 +644,10 @@
 @media screen and (max-width: 576px) {
 }
 @media screen and (max-width: 400px) {
+  .Unlimiteds_navLink {
+    overflow: scroll;
+  }
+  .Automation_menu {
+    overflow: scroll;
+  }
 }
