@@ -1,0 +1,30 @@
+.choosePlanContainer {
+  width: 100%;
+  padding: 5%;
+}
+.choosePlanHeadingDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.choosePlanHeadingTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ff403e;
+}
+.choosePlanHeadingSubTitle {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #454238;
+  margin: 0.5%;
+  width: 100%;
+}
+.choosePlanMiddleHeadingDesp {
+  font-weight: 400;
+  font-size: 18px;
+  color: #919b9b;
+  width: 50%;
+}

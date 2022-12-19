@@ -1,0 +1,62 @@
+.MobileAppContainer {
+  width: 100%;
+  padding: 5%;
+}
+
+.MobileAppMainDiv {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+}
+.MobileAppLeftDiv {
+  width: 50%;
+}
+.MobileAppTitle {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  width: 80%;
+  color: #454238;
+}
+.MobileAppRightDiv {
+  width: 50%;
+}
+.MobileAppListtext {
+  font-weight: 700;
+  font-size: 16px;
+  color: #454238;
+  margin: 2% 0;
+}
+.MobileAppLeftDiv span {
+  color: blue;
+}
+.MobileAppListDiv {
+  display: flex;
+  align-items: center;
+  margin: 0.5% 0;
+}
+.MobileAppListIcon {
+  display: flex;
+  align-items: center;
+}
+.MobileAppListDiv p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #454238;
+  margin-left: 1%;
+}
+.MobileAppStoreDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin-top: 8%;
+}
+.MobileAppStoreImgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}

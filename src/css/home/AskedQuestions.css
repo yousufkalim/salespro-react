@@ -1,0 +1,66 @@
+.askedQuestionsContainer {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.askedQuestionsLeftDiv {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.askedQuestionsTitleDiv p {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff403e;
+}
+.askedQuestionsTitleDiv h2 {
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 48px;
+  color: #454238;
+}
+.askedQuestionsRightDiv {
+  width: 60%;
+}
+.askedQuestionsListContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.askedQuestionsListDiv {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.askedQuestionsListNumber {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0051c4;
+  padding: 3%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: #f8f8f8;
+  font-weight: 600;
+}
+.askedQuestionsListText {
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #454238;
+  margin-left: 3%;
+}
+.askedQuestionsListAdd {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
