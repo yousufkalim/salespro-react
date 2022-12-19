@@ -30,7 +30,7 @@ export default function Footer() {
               <Link to="/pricing" className="footerMenu">
                 Pricing
               </Link>
-              <br />w
+              <br />
               <Link to="/features" className="footerMenu">
                 Features
               </Link>
