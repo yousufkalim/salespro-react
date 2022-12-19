@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 // import Slider from "react-slick";
 import WorkflowStep from './WorkflowStep';
 import WorkflowStepTow from './WorkflowStepTow';
@@ -12,19 +12,19 @@ function Workflows() {
     setShowCompont(i);
   };
 
-  // const moveSlider = () => {
-  //   if (showCompnent >= 1) {
-  //     setShowCompont(0);
-  //   } else {
-  //     setShowCompont(1);
-  //   }
-  // };
+  const moveSlider = () => {
+    if (showCompnent >= 1) {
+      setShowCompont(0);
+    } else {
+      setShowCompont(1);
+    }
+  };
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     moveSlider();
-  //   }, 3000);
-  // }, [showCompnent]);
+  useEffect(() => {
+    setTimeout(() => {
+      moveSlider();
+    }, 3000);
+  }, [showCompnent]);
 
   return (
     <div>
