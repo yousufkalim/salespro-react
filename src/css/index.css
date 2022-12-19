@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Righteous&display=swap');
+
 /* Importing all CSS files */
 @import url('./Header.css');
+@import url('./Features.css');
 
 /* Defaults */
 * {
@@ -11,4 +15,10 @@
 /* Primary Variables */
 :root {
   --primary: 'green';
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Righteous', cursive;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Righteous', cursive;
 }
