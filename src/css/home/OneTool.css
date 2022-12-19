@@ -1,5 +1,8 @@
 .oneToolContainer {
   width: 100%;
+  background-image: url(../../assets/images/tools_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .oneToolContentDiv {
   width: 100%;
@@ -53,6 +56,9 @@
   align-items: center;
   width: 40%;
 }
+.oneToolImgDiv img {
+  width: 100%;
+}
 .oneToolInfoBoxRight {
   display: flex;
   flex-direction: column;
@@ -87,4 +93,144 @@
   font-size: 18px;
   text-align: center;
   color: #ffffff;
+}
+.oneToolInfoBoxMob {
+  display: none !important;
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oneToolInfoBoxLeftMob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  padding: 0 2%;
+  width: 25%;
+  background: linear-gradient(180deg, #236fda 0%, #2a7ff8 100%);
+  border-radius: 20px;
+  margin-right: 3%;
+}
+.oneToolInfoBoxLeftMob p {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.oneToolInfoBoxLeftMob h1 {
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 48px;
+  /* White */
+  color: #ffffff;
+}
+.oneToolInfoBoxLeftMob h2 {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.oneToolInfoBoxRightMob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2%;
+  height: 200px;
+  width: 25%;
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  color: #ffffff;
+}
+.oneToolInfoBoxRightMob h2 {
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 48px;
+  /* White */
+  color: #ffffff;
+}
+.oneToolInfoBoxRightMob span {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1366px) {
+  .oneToolContentDiv {
+    justify-content: space-evenly;
+  }
+  .oneToolImgDiv {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .oneToolContentDiv {
+    flex-direction: column;
+  }
+  .oneToolInfoBoxMob {
+    display: flex !important;
+  }
+  .oneToolInfoBoxLeft {
+    display: none;
+  }
+  .oneToolInfoBoxRight {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .oneToolImgDiv {
+    width: 80%;
+  }
+  .oneToolInfoBoxLeftMob {
+    width: 30%;
+  }
+  .oneToolInfoBoxRightMob {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .oneToolImgDiv {
+    width: 90%;
+  }
+  .oneToolInfoBoxLeftMob {
+    width: 35%;
+  }
+  .oneToolInfoBoxLeftMob h1 {
+    font-size: 40px;
+  }
+  .oneToolInfoBoxLeftMob h2 {
+    font-size: 16px;
+  }
+  .oneToolInfoBoxRightMob {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .oneToolImgDiv {
+    width: 90%;
+  }
+  .oneToolInfoBoxLeftMob {
+    width: 40%;
+  }
+  .oneToolInfoBoxLeftMob h1 {
+    font-size: 40px;
+  }
+  .oneToolInfoBoxLeftMob h2 {
+    font-size: 16px;
+  }
+  .oneToolInfoBoxRightMob {
+    width: 40%;
+  }
+  .oneToolInfoBoxRightMob h1 {
+    font-size: 40px;
+  }
+  .oneToolInfoBoxRightMob h2 {
+    font-size: 16px;
+  }
 }

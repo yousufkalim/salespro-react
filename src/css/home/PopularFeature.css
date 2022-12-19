@@ -11,9 +11,10 @@
   margin-bottom: 3%;
 }
 .popularFeatureMainDiv {
-  background: linear-gradient(96.01deg, #e0f4ff 5.7%, rgba(255, 255, 255, 0) 77.68%);
+  /* background: linear-gradient(96.01deg, #e0f4ff 5.7%, rgba(255, 255, 255, 0) 77.68%); */
   border-radius: 50px;
   padding: 3%;
+  width: 100%;
 }
 .popularFeatureTabsDiv {
   display: flex;
@@ -46,6 +47,12 @@
   width: 90%;
   margin: 3% 0;
 }
+.popularFeatureSubDesp {
+  font-weight: 500;
+  font-size: 18px;
+  color: #0051c4;
+  margin-bottom: 2%;
+}
 .popularFeatureList {
   font-weight: 500;
   font-size: 18px;
@@ -63,6 +70,12 @@
   width: fit-content;
   color: #ffffff;
 }
+.popularFeatureFeatureBtn {
+  font-weight: 500;
+  font-size: 18px;
+  color: #919b9b;
+  margin-top: 5%;
+}
 .popularFeatureImgDiv {
   width: 50%;
   display: flex;
@@ -78,12 +91,7 @@
   width: 100%;
   margin: 3% 0;
 }
-.choosePlanCardSubDiv {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 80%;
-}
+
 .css-1aquho2-MuiTabs-indicator {
   height: 0 !important;
 }
@@ -91,4 +99,32 @@
   color: #ff403e !important;
   background: #ffffff !important;
   border-radius: 15px !important;
+}
+
+.css-heg063-MuiTabs-flexContainer {
+  overflow-x: scroll !important;
+}
+.css-heg063-MuiTabs-flexContainer::-webkit-scrollbar {
+  display: none !important;
+}
+@media only screen and (max-width: 900px) {
+  .popularFeatureSubDiv {
+    flex-direction: column-reverse;
+  }
+  .popularFeatureTextDiv {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .popularFeatureImgDiv {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .popularFeatureHeading {
+    font-size: 50px;
+  }
+  .popularFeatureDesp {
+    font-size: 16px;
+    width: 100%;
+  }
 }
