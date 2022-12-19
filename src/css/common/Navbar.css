@@ -2,9 +2,9 @@
   width: 100%;
   display: flex;
   padding: 0.5% 5%;
-  background: transparent;
   position: fixed;
   justify-content: space-between;
+  z-index: 9;
 }
 .navbarLeftDiv {
   display: flex;

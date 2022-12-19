@@ -1,3 +1,7 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable import/order */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-useless-fragment */
@@ -8,7 +12,16 @@
 import React from 'react';
 import QA from '../../assets/images/qa_image.svg';
 import Plus from '../../assets/images/plus.png';
+import Negative from '../../assets/images/negative.svg';
+import Collapse from '@mui/material/Collapse';
+import { List } from '@mui/material';
+import { QuestionData } from '../../utils/QuestionsData';
+
 export default function AskedQuestions() {
+  const [open, setOpen] = React.useState(false);
+  const handleClick = (item) => {
+    setOpen(item);
+  };
   return (
     <>
       <div className="askedQuestionsContainer">
@@ -22,79 +35,49 @@ export default function AskedQuestions() {
           </div>
         </div>
         <div className="askedQuestionsRightDiv">
-          <div className="askedQuestionsListContainer">
-            <div className="askedQuestionsListDiv">
-              <div className="askedQuestionsListNumber">1</div>
-              <div className="askedQuestionsListText">
-                Does SalesPro Direct require a long-term commitment?
+          {QuestionData.map((item) => {
+            return (
+              <div style={{ width: '100%', marginBottom: '2%' }}>
+                <div className="askedQuestionsListContainer">
+                  <div className="askedQuestionsListDiv">
+                    <div
+                      className={
+                        open === item.title
+                          ? 'askedQuestionsListNumberClose'
+                          : 'askedQuestionsListNumber'
+                      }
+                    >
+                      {item.index}
+                    </div>
+                    <div className="askedQuestionsListText">{item.title}</div>
+                  </div>
+                  <div
+                    onClick={() => {
+                      if (open !== item.title) {
+                        handleClick(item.title);
+                      } else {
+                        handleClick('');
+                      }
+                    }}
+                    className="askedQuestionsListAdd"
+                  >
+                    <img src={open === item.title ? Negative : Plus} alt="plus" />
+                  </div>
+                </div>
+                <Collapse
+                  className="askedQuestionsCollapseDiv"
+                  in={open === item.title}
+                  timeout="auto"
+                  unmountOnExit
+                >
+                  <List component="div" disablePadding>
+                    <div className="askedQuestionsCollapseText">{item.desp}</div>
+                  </List>
+                </Collapse>
               </div>
-            </div>
-            <div className="askedQuestionsListAdd">
-              <img src={Plus} alt="plus" />
-            </div>
-          </div>
-          <div className="askedQuestionsListContainer">
-            <div className="askedQuestionsListDiv">
-              <div className="askedQuestionsListNumber">2</div>
-              <div className="askedQuestionsListText">Does SalesPro Direct have a guarantee?</div>
-            </div>
-            <div className="askedQuestionsListAdd">
-              <img src={Plus} alt="plus" />
-            </div>
-          </div>
-          <div className="askedQuestionsListContainer">
-            <div className="askedQuestionsListDiv">
-              <div className="askedQuestionsListNumber">3</div>
-              <div className="askedQuestionsListText">
-                Can I build websites and landing pages in Salespro Direct?
-              </div>
-            </div>
-            <div className="askedQuestionsListAdd">
-              <img src={Plus} alt="plus" />
-            </div>
-          </div>
-          <div className="askedQuestionsListContainer">
-            <div className="askedQuestionsListDiv">
-              <div className="askedQuestionsListNumber">4</div>
-              <div className="askedQuestionsListText">How do I know which plan is best for me?</div>
-            </div>
-            <div className="askedQuestionsListAdd">
-              <img src={Plus} alt="plus" />
-            </div>
-          </div>
-          <div className="askedQuestionsListContainer">
-            <div className="askedQuestionsListDiv">
-              <div className="askedQuestionsListNumber">5</div>
-              <div className="askedQuestionsListText">
-                How long will it take to install Salespro Direct?
-              </div>
-            </div>
-            <div className="askedQuestionsListAdd">
-              <img src={Plus} alt="plus" />
-            </div>
-          </div>
-          <div className="askedQuestionsListContainer">
-            <div className="askedQuestionsListDiv">
-              <div className="askedQuestionsListNumber">6</div>
-              <div className="askedQuestionsListText">
-                Is SalesPro Direct suitable for any kind of business?
-              </div>
-            </div>
-            <div className="askedQuestionsListAdd">
-              <img src={Plus} alt="plus" />
-            </div>
-          </div>
-          <div className="askedQuestionsListContainer">
-            <div className="askedQuestionsListDiv">
-              <div className="askedQuestionsListNumber">7</div>
-              <div className="askedQuestionsListText">
-                Does SalesPro Direct have any additional fees or costs?
-              </div>
-            </div>
-            <div className="askedQuestionsListAdd">
-              <img src={Plus} alt="plus" />
-            </div>
-          </div>
+            );
+          })}
+
           <div className="testimonialFreeTrialBtn">Contact support</div>
         </div>
       </div>

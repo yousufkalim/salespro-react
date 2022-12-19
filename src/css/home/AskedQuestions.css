@@ -23,6 +23,7 @@
   font-size: 48px;
   color: #454238;
 }
+
 .askedQuestionsRightDiv {
   width: 60%;
 }
@@ -30,7 +31,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2%;
 }
 .askedQuestionsListDiv {
   display: flex;
@@ -43,6 +43,19 @@
   justify-content: center;
   align-items: center;
   background: #0051c4;
+  padding: 3%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: #f8f8f8;
+  font-weight: 600;
+}
+.askedQuestionsListNumberClose {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff403e;
   padding: 3%;
   width: 15px;
   height: 15px;
@@ -63,4 +76,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.askedQuestionsCollapseDiv {
+  padding: 2% 8%;
+}
+.askedQuestionsCollapseText {
+  color: #6f6c61;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1200px) {
+  .askedQuestionsContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .askedQuestionsLeftDiv {
+    width: 100%;
+  }
+  .askedQuestionsRightDiv {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .askedQuestionsImageDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .askedQuestionsImageDiv img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .askedQuestionsListText {
+    font-size: 16px;
+  }
 }

@@ -23,6 +23,9 @@
 .MobileAppRightDiv {
   width: 50%;
 }
+.MobileAppRightDiv img {
+  width: 100%;
+}
 .MobileAppListtext {
   font-weight: 700;
   font-size: 16px;
@@ -51,7 +54,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 5%;
   margin-top: 8%;
 }
 .MobileAppStoreImgDiv {
@@ -59,4 +61,44 @@
   align-items: center;
   justify-content: center;
   width: 20%;
+  margin-right: 3%;
+}
+.MobileAppStoreImgDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1366px) {
+  .MobileAppTitle {
+    width: 90%;
+  }
+  .MobileAppStoreImgDiv {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .MobileAppTitle {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .MobileAppMainDiv {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .MobileAppLeftDiv {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .MobileAppRightDiv {
+    width: 100%;
+  }
+  .MobileAppTitle {
+    width: 80%;
+  }
+  .MobileAppStoreImgDiv {
+    width: 20%;
+  }
 }

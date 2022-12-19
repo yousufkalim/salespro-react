@@ -15,12 +15,14 @@ import AskedQuestions from '../components/home/AskedQuestions';
 // Home Component
 export default function Home() {
   return (
-    <div>
+    <div className="homeContainer">
       <Navbar />
       <HomeHero />
       <PopularFeature />
-      <ChoosePlan />
-      <MobileApp />
+      <div className="homeChooseAndMobileContainer">
+        <ChoosePlan />
+        <MobileApp />
+      </div>
       <OneTool />
       <ClientTestimonial />
       <AskedQuestions />
