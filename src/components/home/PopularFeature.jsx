@@ -17,6 +17,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import DoneIcon from '@mui/icons-material/Done';
+import { Link } from 'react-router-dom';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -106,7 +107,9 @@ export default function PopularFeature() {
                   </div>
 
                   <div className="popularFeatureButton">Start Your Free Trial</div>
-                  <div className="popularFeatureFeatureBtn">See all features</div>
+                  <Link to="/features" className="popularFeatureFeatureBtn">
+                    See all features
+                  </Link>
                 </div>
                 <div className="popularFeatureImgDiv">
                   <img src={Image} alt="image" />
@@ -171,7 +174,9 @@ export default function PopularFeature() {
 
                   <div className="popularFeatureButton">Start Your Free Trial</div>
 
-                  <div className="popularFeatureFeatureBtn">See all features</div>
+                  <Link to="/features" className="popularFeatureFeatureBtn">
+                    See all features
+                  </Link>
                 </div>
                 <div className="popularFeatureImgDiv">
                   <img src={SMS} alt="image" />
@@ -208,7 +213,9 @@ export default function PopularFeature() {
                   </div>
 
                   <div className="popularFeatureButton">Start Your Free Trial</div>
-                  <div className="popularFeatureFeatureBtn">See all features</div>
+                  <Link to="/features" className="popularFeatureFeatureBtn">
+                    See all features
+                  </Link>
                 </div>
                 <div className="popularFeatureImgDiv">
                   <img src={Image} alt="image" />
@@ -245,7 +252,9 @@ export default function PopularFeature() {
                   </div>
 
                   <div className="popularFeatureButton">Start Your Free Trial</div>
-                  <div className="popularFeatureFeatureBtn">See all features</div>
+                  <Link to="/features" className="popularFeatureFeatureBtn">
+                    See all features
+                  </Link>
                 </div>
                 <div className="popularFeatureImgDiv">
                   <img src={Image} alt="image" />

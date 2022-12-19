@@ -19,10 +19,15 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.navbarMenuDiv p {
+.navbarCollapseLink {
+  text-decoration: none;
+  color: #000000;
+}
+.navbarMenuLink {
   font-weight: 500;
   font-size: 18px;
   color: #919b9b;
+  text-decoration: none;
 }
 .navbarRightDiv {
   display: flex;
