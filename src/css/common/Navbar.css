@@ -98,7 +98,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1.5%;
+  padding: 3%;
   background: linear-gradient(
     108.92deg,
     rgba(255, 64, 62, 0.1) 14.41%,
@@ -106,8 +106,9 @@
   );
   border-radius: 100px;
 }
-.navbarLoginBtn p {
+.navbarLinkLogin {
   color: #ff403e;
+  text-decoration: none;
 }
 .navbarMobMenu {
   display: none;

@@ -101,7 +101,9 @@ export default function Navbar() {
               strokeLinejoin="round"
             />
           </svg>
-          <p>Login</p>
+          <Link className="navbarLinkLogin" to="/login">
+            Login
+          </Link>
         </div>
       </div>
       <div className="navbarMobMenu">
