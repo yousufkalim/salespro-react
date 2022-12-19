@@ -10,6 +10,13 @@
   align-items: center;
   height: 100vh;
 }
+.main-pop h1 {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #454238;
+}
 .main-pop {
   width: 40%;
   display: flex;
