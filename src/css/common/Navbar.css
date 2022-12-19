@@ -1,3 +1,13 @@
+.secondaryNavbar {
+  padding: 1.5% 5%;
+  width: 100%;
+  display: flex;
+  background: transparent;
+  position: relative;
+  justify-content: space-between;
+  z-index: 1300;
+}
+
 .navbarContainer {
   width: 100%;
   display: flex;
@@ -5,6 +15,7 @@
   background: transparent;
   position: fixed;
   justify-content: space-between;
+  z-index: 1300;
 }
 .navbarLeftDiv {
   display: flex;
@@ -24,6 +35,9 @@
   font-size: 18px;
   color: #919b9b;
 }
+#secNavbarMenuDiv p {
+  color: white;
+}
 .navbarRightDiv {
   display: flex;
   width: 25%;
@@ -38,6 +52,19 @@
   text-transform: capitalize;
   color: #0051c4;
 }
+.secNavbarContactBtn {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: white;
+  background-color: #ff5c5ad6;
+  border-radius: 30px;
+  padding: 4%;
+  width: 155px;
+  cursor: pointer;
+}
 .navbarSignUpBtn {
   display: flex;
   justify-content: space-evenly;
@@ -45,7 +72,7 @@
   background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
   border-radius: 100px;
   width: 30%;
-  padding: 1.5%;
+  padding: 3%;
   margin: 0 1%;
 }
 
@@ -97,6 +124,12 @@
   width: 100%;
   white-space: nowrap;
 }
+@media only screen and (max-width: 1600px) {
+  .secNavbarContactBtn {
+    padding: 4% 2px;
+  }
+}
+
 @media only screen and (max-width: 1366px) {
   .navbarMenuDiv {
     width: 70%;
@@ -115,6 +148,7 @@
   .navbarContactBtn {
     white-space: nowrap;
   }
+
   /* .navbarMobMenu {
     display: flex;
   } */
