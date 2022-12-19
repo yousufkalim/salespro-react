@@ -58,6 +58,11 @@
   text-align: center;
   color: #ff403e !important;
 }
+.StopWasting {
+  display: flex;
+  width: 70%;
+  margin: 0 auto 10% auto;
+}
 .testimonialFreeTrialDiv {
   width: 70%;
   display: flex;
