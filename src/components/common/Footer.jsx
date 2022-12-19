@@ -26,10 +26,14 @@ export default function Footer() {
               <Link to="/" className="footerMenu">
                 Home
               </Link>
+              <br />
               <Link to="/pricing" className="footerMenu">
                 Pricing
               </Link>
-              <p className="footerMenu">Features</p>
+              <br />
+              <Link to="/features" className="footerMenu">
+                Features
+              </Link>
               <p className="footerMenu">About us</p>
             </div>
             <div className="footerMenu">

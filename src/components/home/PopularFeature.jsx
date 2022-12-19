@@ -57,16 +57,19 @@ export default function PopularFeature() {
       <div className="popularFeatureMainDiv">
         <Box sx={{ width: '100%' }}>
           <Box>
-            <Tabs
-              className="popularFeatureTabsContainer"
-              value={value}
-              onChange={handleChange}
-              aria-label="basic tabs example"
-            >
-              <Tab label="Auto Dealer" {...a11yProps(0)} />
-              <Tab label="Unlimited Messaging" {...a11yProps(1)} />
-              <Tab label="Integrated CRM" {...a11yProps(2)} />
-              <Tab label="Automation" {...a11yProps(3)} />
+            <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+              <Tab className="popularFeatureTabsContainer" label="Auto Dealer" {...a11yProps(0)} />
+              <Tab
+                className="popularFeatureTabsContainer"
+                label="Unlimited Messaging"
+                {...a11yProps(1)}
+              />
+              <Tab
+                className="popularFeatureTabsContainer"
+                label="Integrated CRM"
+                {...a11yProps(2)}
+              />
+              <Tab className="popularFeatureTabsContainer" label="Automation" {...a11yProps(3)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>

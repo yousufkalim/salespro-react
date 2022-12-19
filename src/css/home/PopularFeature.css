@@ -97,7 +97,15 @@
 .css-1aquho2-MuiTabs-indicator {
   height: 0 !important;
 }
-.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+/* .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #ff403e !important;
+  background: #ffffff !important;
+  border-radius: 15px !important;
+} */
+.popularFeatureTabsContainer {
+  color: #919b9b !important;
+}
+.popularFeatureTabsContainer:focus {
   color: #ff403e !important;
   background: #ffffff !important;
   border-radius: 15px !important;
