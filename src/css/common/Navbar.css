@@ -69,6 +69,10 @@
   padding: 4% 10px;
   cursor: pointer;
 }
+.navbarLink {
+  text-decoration: none;
+  color: #ffffff;
+}
 .navbarSignUpBtn {
   display: flex;
   justify-content: space-evenly;
@@ -78,6 +82,7 @@
   width: 30%;
   padding: 3%;
   margin: 0 1%;
+  text-decoration: none;
 }
 
 .navbarSignUpBtn p {
