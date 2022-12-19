@@ -120,3 +120,101 @@
 .footerSocialIcon {
   margin-right: 1%;
 }
+.footerLogoDiv {
+  width: 20%;
+}
+.footerLogoDiv img {
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .footerHeadingText {
+    font-size: 24px;
+  }
+  .footerDespText {
+    font-size: 14px;
+  }
+  .footerMenuTitle {
+    font-size: 16px;
+  }
+  .footerMenu {
+    font-size: 14px;
+  }
+  .footerSignupBtn {
+    padding: 5%;
+    font-size: 16px;
+  }
+  .footerLoginBtn {
+    padding: 5%;
+    font-size: 16px;
+  }
+  .footerButtonContainer {
+    width: 10%;
+  }
+  .footerMenuDiv {
+    width: 45%;
+  }
+  .footerCopyrightDiv {
+    font-size: 14px;
+  }
+  .footerSocialIconsDiv {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .footerContainer {
+    flex-direction: column-reverse;
+  }
+  .footerLogoContainer {
+    justify-content: center;
+    margin: 1% 0;
+  }
+  .footerTopDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footerTextDiv {
+    display: none;
+  }
+  .footerMenuDiv {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footerButtonContainer {
+    display: none;
+  }
+  .footerMenu {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footerBottomContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footerSocialIconsDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+  .footerCopyrightDiv {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .footerLogoDiv {
+    width: 40%;
+  }
+  .footerMenuDiv {
+    margin: 2% 0;
+  }
+}

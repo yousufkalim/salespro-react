@@ -162,3 +162,13 @@
   text-transform: capitalize;
   color: #ffffff;
 }
+@media only screen and (max-width: 900px) {
+  .cardContainer {
+    margin: 5% 0;
+    padding: 5% 5.3%;
+  }
+  .cardContainerLite {
+    margin: 5% 0;
+    padding: 5% 5.3%;
+  }
+}

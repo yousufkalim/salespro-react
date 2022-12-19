@@ -35,6 +35,26 @@ export default function OneTool() {
               $49 <span>/ Month</span>{' '}
             </h2>
           </div>
+          <div className="oneToolInfoBoxMob">
+            <div className="oneToolInfoBoxLeftMob">
+              <p>Per Month</p>
+              <div style={{ position: 'relative', margin: '2% 0' }}>
+                <h1>$1,736</h1>
+                <div className="oneToolCross" />
+              </div>
+              <h2>Avg. Sales Pro Spend a month on a combined software</h2>
+            </div>
+            <div className="oneToolInfoBoxRightMob">
+              <div style={{ position: 'relative', margin: '2% 0' }}>
+                <h1>$1,736</h1>
+                <div className="oneToolCrossRight" />
+              </div>
+              <p>Limited Time offer</p>
+              <h2>
+                $49 <span>/ Month</span>{' '}
+              </h2>
+            </div>
+          </div>
         </div>
       </div>
     </>

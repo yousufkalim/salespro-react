@@ -8,6 +8,8 @@
 import React from 'react';
 import Avatar from '../../assets/images/testimonial_avatar.png';
 import Trail from '../../assets/images/free_trail.png';
+import Next from '../../assets/images/next.svg';
+import Back from '../../assets/images/back.svg';
 export default function ClientTestimonial() {
   return (
     <>
@@ -33,6 +35,10 @@ export default function ClientTestimonial() {
                 <p className="testimonialClientDesig">CEO Creative Studio</p>
               </div>
             </div>
+          </div>
+          <div className="testimonialFeedbackBtn">
+            <img className="testimonialFeedbackBackBtn" src={Back} alt="back" />
+            <img className="testimonialFeedbackNextBtn" src={Next} alt="next" />
           </div>
         </div>
 

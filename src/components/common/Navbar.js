@@ -10,15 +10,23 @@ import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ListItemButton } from '@mui/material';
+import { useScrollPosition } from '../../utils/ScrollPosition';
+
 // import PersonIcon from '../../assets/images/person_icon.svg';
 // Component
 export default function Navbar() {
+  const position = useScrollPosition();
   const [open, setOpen] = React.useState(false);
   const handleClick = () => {
     setOpen(!open);
   };
   return (
-    <div className="navbarContainer">
+    <div
+      className="navbarContainer"
+      style={{
+        background: position <= 10 ? 'transparent' : 'white',
+      }}
+    >
       <div className="navbarLeftDiv">
         <div className="navbarLogoDiv">
           <img className="navbarLogo" src={Logo} alt="logo" />

@@ -18,7 +18,9 @@ export default function HomeHero() {
             Easily Contact 100+ Prospects Per Hour, Automate Followup Sequences, and Close More
             Deals.
           </p>
-          <div className="homeHeroBtnDiv"> Start Free Trial</div>
+          <div className="homeHeroBtnContainer">
+            <div className="homeHeroBtnDiv"> Start Free Trial</div>
+          </div>
         </div>
         <div className="homeHerorightDiv">
           <img src={Hero} alt="hero" />

@@ -35,3 +35,6 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-family: 'Righteous', cursive;
 }
+.homeContainer {
+  overflow: hidden;
+}

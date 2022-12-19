@@ -74,6 +74,11 @@
 .table {
   height: 1300px;
   margin-top: 7%;
+  background-image: url(../assets/images/blue_price_bg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+  background-size: contain;
 }
 
 .tableHead1 {

@@ -17,7 +17,7 @@
   font-weight: 700;
   font-size: 60px;
   margin: 3% 0;
-  /* Black */
+  font-family: 'Righteous';
   color: #454238;
 }
 .homeHeroHeading span {
@@ -72,5 +72,22 @@
   }
   .homeHeroDesp {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .homeHeroContainer {
+    flex-direction: column-reverse;
+  }
+  .homeHerorightDiv {
+    width: 100%;
+  }
+  .homeHeroLeftDiv {
+    width: 100%;
+    text-align: center;
+  }
+  .homeHeroBtnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
