@@ -1,0 +1,102 @@
+.testimonialContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonialMainDiv {
+  width: 60%;
+  background-image: url(../../assets/images/dotted_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+.testimonialFeedbackDiv {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7% 5%;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 8% 0;
+}
+.testimonialFeedbackDiv p {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #454238;
+}
+.testimonialClientDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  width: 50%;
+}
+.testimonialClientInfo {
+  text-align: left !important;
+  margin-left: 1%;
+}
+.testimonialClientInfo p {
+  text-align: left !important;
+}
+.testimonialClientName {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #454238;
+}
+.testimonialClientDesig {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #ff403e !important;
+}
+.testimonialFreeTrialDiv {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 5% 0;
+}
+.testimonialFreeTrialTextDiv {
+  width: 70%;
+}
+.testimonialFreeTrialTextDiv h2 {
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 36px;
+  color: #454238;
+}
+.testimonialFreeTrialTextDiv p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #919b9b;
+  margin: 3% 0;
+}
+.testimonialFreeTrialBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 10%;
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  border-radius: 100px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 5%;
+}
+.testimonialFreeTrialImgDiv {
+  width: 30%;
+}

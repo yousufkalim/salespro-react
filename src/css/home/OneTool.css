@@ -1,0 +1,90 @@
+.oneToolContainer {
+  width: 100%;
+}
+.oneToolContentDiv {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oneToolInfoBoxLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  width: 20%;
+  background: linear-gradient(180deg, #236fda 0%, #2a7ff8 100%);
+  border-radius: 20px;
+}
+.oneToolInfoBoxLeft p {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+.oneToolInfoBoxLeft h1 {
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 48px;
+  /* White */
+  color: #ffffff;
+}
+.oneToolCross {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  border-radius: 100px;
+  transform: rotate(-10deg);
+}
+.oneToolInfoBoxLeft h2 {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+.oneToolImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.oneToolInfoBoxRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  width: 20%;
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  color: #ffffff;
+}
+.oneToolCrossRight {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  background: linear-gradient(180deg, #236fda 0%, #2a7ff8 100%);
+  border-radius: 100px;
+  transform: rotate(-10deg);
+}
+.oneToolInfoBoxRight h2 {
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 48px;
+  /* White */
+  color: #ffffff;
+}
+.oneToolInfoBoxRight span {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}

@@ -1,11 +1,22 @@
 /* Importing all CSS files */
 @import url('./Header.css');
-
+@import url('./common/Navbar.css');
+@import url('./common/Card.css');
+@import url('./common/Footer.css');
+@import url('./home/HomeHero.css');
+@import url('./home/PopularFeature.css');
+@import url('./home/ChoosePlan.css');
+@import url('./home/MobileApp.css');
+@import url('./home/OneTool.css');
+@import url('./home/Testimonial.css');
+@import url('./home/AskedQuestions.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 /* Defaults */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* Primary Variables */

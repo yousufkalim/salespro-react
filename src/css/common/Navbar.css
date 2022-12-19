@@ -1,0 +1,147 @@
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  padding: 0.5% 5%;
+  background: transparent;
+  position: fixed;
+  justify-content: space-between;
+}
+.navbarLeftDiv {
+  display: flex;
+  width: 70%;
+}
+.navbarLogoDiv {
+  width: 20%;
+}
+.navbarMenuDiv {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbarMenuDiv p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #919b9b;
+}
+.navbarRightDiv {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbarContactBtn {
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #0051c4;
+}
+.navbarSignUpBtn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  border-radius: 100px;
+  width: 30%;
+  padding: 1.5%;
+  margin: 0 1%;
+}
+
+.navbarSignUpBtn p {
+  color: #ffffff;
+}
+.navbarLoginBtn {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5%;
+  background: linear-gradient(
+    108.92deg,
+    rgba(255, 64, 62, 0.1) 14.41%,
+    rgba(255, 129, 69, 0.1) 87.23%
+  );
+  border-radius: 100px;
+}
+.navbarLoginBtn p {
+  color: #ff403e;
+}
+.navbarMobMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 20%;
+}
+.navbarMobMenuIcon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbarCollapseDiv {
+  position: absolute;
+  top: 100%;
+  background: white;
+  width: 100%;
+  white-space: nowrap;
+}
+.navbarCollapseListDiv {
+  width: 100% !important;
+  white-space: nowrap;
+}
+.navbarCollapseListItems {
+  width: 100%;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 1366px) {
+  .navbarMenuDiv {
+    width: 70%;
+  }
+  .navbarRightDiv {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navbarMenuDiv {
+    width: 80%;
+  }
+  .navbarMenuDiv p {
+    font-size: 15px;
+  }
+  .navbarContactBtn {
+    white-space: nowrap;
+  }
+  /* .navbarMobMenu {
+    display: flex;
+  } */
+}
+@media only screen and (max-width: 900px) {
+  .navbarMobMenu {
+    display: flex;
+  }
+  .navbarMenuDiv {
+    display: none;
+  }
+  .navbarRightDiv {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbarMobMenu {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbarMobMenu {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .navbarMobMenu {
+    width: 50%;
+  }
+}

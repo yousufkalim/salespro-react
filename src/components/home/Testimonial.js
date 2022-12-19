@@ -1,0 +1,55 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-useless-fragment */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable import/newline-after-import */
+// Init
+import React from 'react';
+import Avatar from '../../assets/images/testimonial_avatar.png';
+import Trail from '../../assets/images/free_trail.png';
+export default function ClientTestimonial() {
+  return (
+    <>
+      <div className="testimonialContainer">
+        <div className="choosePlanHeadingDiv">
+          <p className="choosePlanHeadingTitle">BE PART OF THE CHANGE !</p>
+          <p className="choosePlanHeadingSubTitle">Client Testimonials</p>
+        </div>
+
+        <div className="testimonialMainDiv">
+          <div className="testimonialFeedbackDiv">
+            <p>
+              No other eCommerce platform allows people to start for free and grow their store as
+              their business grows. More importantly, WooCommerce doesn't charge you a portion of
+              your profits as your business grows!
+            </p>
+            <div className="testimonialClientDiv">
+              <div className="testimonialAvatarDiv">
+                <img src={Avatar} alt="avatar" />
+              </div>
+              <div className="testimonialClientInfo">
+                <p className="testimonialClientName">Younus Akram</p>
+                <p className="testimonialClientDesig">CEO Creative Studio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="testimonialFreeTrialDiv">
+          <div className="testimonialFreeTrialTextDiv">
+            <h2>Stop wasting time with manual outreach.</h2>
+            <p>
+              Salespro Direct takes less than 5 minutes to setup, allows you to work 10x as fast,
+              and will increase sales from Day 1
+            </p>
+            <div className="testimonialFreeTrialBtn">Start Free Trial</div>
+          </div>
+          <div className="testimonialFreeTrialImgDiv">
+            <img src={Trail} alt="image" />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
