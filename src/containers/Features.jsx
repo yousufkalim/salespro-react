@@ -6,7 +6,7 @@ import Workflows from '../components/Features/Workflows';
 import UnlimitedFeatures from '../components/Features/UnlimitedFeatures';
 import TrackWins from '../components/Features/TrackWins';
 import Footer from './../components/common/Footer';
-import Traial from '../components/Features/Traial';
+import Trial from '../components/Features/Trial';
 import SecondaryNavbar from './../components/common/SecondaryNavbar';
 
 function Features() {
@@ -18,7 +18,7 @@ function Features() {
       <Workflows />
       <UnlimitedFeatures />
       <TrackWins />
-      <Traial />
+      <Trial />
       <Footer />
     </div>
   );
