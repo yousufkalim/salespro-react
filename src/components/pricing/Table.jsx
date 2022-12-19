@@ -88,6 +88,10 @@ export default function PricingTable() {
           padding: '2% 4%',
           margin: 'auto',
           boxShadow: '0 3px 40px #E3E3E3',
+          '@media (max-width: 1000px)': {
+            width: '780px',
+            background: 'yellow',
+          },
         }}
       >
         <div className="tableHead">

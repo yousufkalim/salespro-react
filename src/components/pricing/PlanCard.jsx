@@ -103,7 +103,9 @@ export default function PricingCard(props) {
         </div>
       </div>
 
-      <div className="cardButtonDiv">Get started</div>
+      <div className={props.lite ? 'cardButtonDiv' : 'cardButtonDivLite'}>
+        {props.lite ? 'Contact Sales' : 'Get started'}
+      </div>
     </div>
   );
 }
