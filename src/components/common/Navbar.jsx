@@ -11,6 +11,7 @@ import Collapse from '@mui/material/Collapse';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ListItemButton } from '@mui/material';
 import { useScrollPosition } from '../../utils/ScrollPosition';
+import { Link } from 'react-router-dom';
 
 // import PersonIcon from '../../assets/images/person_icon.svg';
 // Component
@@ -32,10 +33,14 @@ export default function Navbar() {
           <img className="navbarLogo" src={Logo} alt="logo" />
         </div>
         <div className="navbarMenuDiv">
-          <p>Home</p>
-          <p>Features</p>
-          <p>Pricing</p>
-          <p>Enterprise</p>
+          <Link className="navbarMenuLink" to="/">
+            Home
+          </Link>
+          <Link className="navbarMenuLink" to="/features">
+            Features
+          </Link>
+          <p className="navbarMenuLink">Pricing</p>
+          <p className="navbarMenuLink">Enterprise</p>
         </div>
       </div>
       <div className="navbarRightDiv">
@@ -100,7 +105,7 @@ export default function Navbar() {
         <div className="navbarMobMenuIcon" onClick={handleClick}>
           <MenuIcon />
         </div>
-        <Collapse className="navbarCollapseDiv" in={open} timeout="auto" unmountOnExit>
+        {/* <Collapse className="navbarCollapseDiv" in={open} timeout="auto" unmountOnExit>
           <List className="navbarCollapseListDiv" component="div" disablePadding>
             <ListItemButton className="navbarCollapseListItems">
               <div>Home</div>
@@ -124,8 +129,37 @@ export default function Navbar() {
               <div>Login</div>
             </ListItemButton>
           </List>
-        </Collapse>
+        </Collapse> */}
       </div>
+      <Collapse className="navbarCollapseDiv" in={open} timeout="auto" unmountOnExit>
+        <List className="navbarCollapseListDiv" component="div" disablePadding>
+          <ListItemButton className="navbarCollapseListItems">
+            <Link className="navbarCollapseLink" to="/">
+              Home
+            </Link>
+          </ListItemButton>
+          <ListItemButton>
+            <Link className="navbarCollapseLink" to="/features">
+              Features
+            </Link>
+          </ListItemButton>
+          <ListItemButton>
+            <div>Pricing</div>
+          </ListItemButton>
+          <ListItemButton>
+            <div>Enterprise</div>
+          </ListItemButton>
+          <ListItemButton>
+            <div>Contact Us</div>
+          </ListItemButton>
+          <ListItemButton>
+            <div>Signup</div>
+          </ListItemButton>
+          <ListItemButton>
+            <div>Login</div>
+          </ListItemButton>
+        </List>
+      </Collapse>
     </div>
   );
 }
