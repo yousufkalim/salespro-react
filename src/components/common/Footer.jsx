@@ -1,14 +1,11 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable react/jsx-no-useless-fragment */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable import/newline-after-import */
 // Init
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/white_logo.svg';
-import Facebook from '../../assets/images/facebook.svg';
-import Instagram from '../../assets/images/instagram.svg';
-import TikTok from '../../assets/images/tiktok.svg';
-import Youtube from '../../assets/images/youtube.svg';
+// import Facebook from '../../assets/images/facebook.svg';
+// import Instagram from '../../assets/images/instagram.svg';
+// import TikTok from '../../assets/images/tiktok.svg';
+// import Youtube from '../../assets/images/youtube.svg';
 export default function Footer() {
   return (
     <>
@@ -26,14 +23,20 @@ export default function Footer() {
           <div className="footerMenuDiv">
             <div className="footerMenu">
               <p className="footerMenuTitle">Navigate</p>
-              <p className="footerMenu">Home</p>
+              <Link to="/" className="footerMenu">
+                Home
+              </Link>
+              <Link to="/pricing" className="footerMenu">
+                Pricing
+              </Link>
               <p className="footerMenu">Features</p>
-              <p className="footerMenu">Pricing</p>
               <p className="footerMenu">About us</p>
             </div>
             <div className="footerMenu">
               <p className="footerMenuTitle">Why Salespro</p>
-              <p className="footerMenu">Features</p>
+              <Link to="/features" className="footerMenu">
+                Features
+              </Link>
               <p className="footerMenu">Terms and conditions</p>
               <p className="footerMenu">Privacy Policy</p>
             </div>
@@ -46,15 +49,19 @@ export default function Footer() {
             </div>
           </div>
           <div className="footerButtonContainer">
-            <div className="footerSignupBtn">Signup</div>
-            <div className="footerLoginBtn">Login</div>
+            <Link to="/signup" className="footerSignupBtn">
+              Signup
+            </Link>
+            <Link to="/login" className="footerLoginBtn">
+              Login
+            </Link>
           </div>
         </div>
 
         <div className="footerLogoContainer">
-          <div className="footerLogoDiv">
+          <Link to="/" className="footerLogoDiv">
             <img src={Logo} alt="Logo" />
-          </div>
+          </Link>
         </div>
       </div>
       <div className="footerDivider" />
@@ -62,12 +69,12 @@ export default function Footer() {
         <div className="footerCopyrightDiv">
           © 2020 <span> Salespro Direct </span> All Rights Reserved.
         </div>
-        <div className="footerSocialIconsDiv">
+        {/* <div className="footerSocialIconsDiv">
           <img className="footerSocialIcon" src={Facebook} alt="Facebook" />
           <img className="footerSocialIcon" src={Instagram} alt="Instagram" />
           <img className="footerSocialIcon" src={TikTok} alt="TikTok" />
           <img className="footerSocialIcon" src={Youtube} alt="Youtube" />
-        </div>
+        </div> */}
       </div>
     </>
   );
