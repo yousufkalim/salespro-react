@@ -1,41 +1,77 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import WorkflowsImg from '../../assets/WorkflowsImg.svg';
-import WorkflowsBtnIcon from '../../assets/WorkflowsBtnIcon.svg';
+import React, { useState, useEffect } from 'react';
+// import Slider from "react-slick";
+import WorkflowStep from './WorkflowStep';
+import WorkflowStepTow from './WorkflowStepTow';
 
 function Workflows() {
+  const [showCompnent, setShowCompont] = useState(0);
+  const handleClick = (i) => {
+    setShowCompont(i);
+  };
+
+  const moveSlider = () => {
+    if (showCompnent >= 1) {
+      setShowCompont(0);
+    } else {
+      setShowCompont(1);
+    }
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      moveSlider();
+    }, 3000);
+  }, [showCompnent]);
+
   return (
     <div>
       <div className="Workflows">
         <div className="Workflows_center">
           <div className="Automation_menu">
-            <a href="" className="Automation_links">
+            <div
+              className={showCompnent === 0 ? 'Automation_links_Active' : 'Automation_links'}
+              onClick={() => handleClick(0)}
+              onKeyDown={handleClick}
+            >
               Automation
-            </a>
-            <a href="" className="Automation_links">
+            </div>
+            <div
+              className={showCompnent === 1 ? 'Automation_links_Active' : 'Automation_links'}
+              onClick={() => handleClick(1)}
+              onKeyDown={handleClick}
+            >
               Auto-Dialing System
-            </a>
-            <a href="" className="Automation_links">
+            </div>
+            <div
+              className={showCompnent === 2 ? 'Automation_links_Active' : 'Automation_links'}
+              onClick={() => handleClick(2)}
+              onKeyDown={handleClick}
+            >
               Mobile App & Desk Phone
-            </a>
-            <a href="" className="Automation_links">
+            </div>
+            <div
+              className={showCompnent === 3 ? 'Automation_links_Active' : 'Automation_links'}
+              onClick={() => handleClick(3)}
+              onKeyDown={handleClick}
+            >
               Pipeline & Opportunity CRM
-            </a>
-            <a href="" className="Automation_links">
+            </div>
+            <div
+              className={showCompnent === 4 ? 'Automation_links_Active' : 'Automation_links'}
+              onClick={() => handleClick(4)}
+              onKeyDown={handleClick}
+            >
               Task Management
-            </a>
+            </div>
           </div>
-          <img src={WorkflowsImg} alt="" className="Workflows_img" />
-          <p className="Workflows_title">Workflows & Automation</p>
-          <p className="Workflows_p">
-            Salespro Direct offers automations for both email and SMS (so that you don’t have to
-            manually follow up with prospects). Similar to Zapier, Salespro Direct allows you to
-            automate numerous workflows (which can save salespeople hours of time each day by
-            automating their entire follow up process):
-          </p>
-          <button type="button" className="Workflows_btn">
-            Get Started <img src={WorkflowsBtnIcon} alt="" className="Workflows_btnIcon" />
-          </button>
+          {showCompnent === 0 && <WorkflowStep />}
+          {showCompnent === 1 && <WorkflowStepTow />}
+          {showCompnent === 2 && '3'}
+          {showCompnent === 3 && '4'}
+          {showCompnent === 4 && '5'}
         </div>
       </div>
     </div>

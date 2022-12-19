@@ -31,10 +31,8 @@ export default function SecondaryNavbar() {
         </div>
       </div>
       <div className="navbarRightDiv">
-        <p className="secNavbarContactBtn" style={{ marginRight: '3%' }}>
-          Contact Sales
-        </p>
-        <div className="navbarSignUpBtn" style={{ marginRight: '3%' }}>
+        <p className="secNavbarContactBtn">Contact Sales</p>
+        <div className="navbarSignUpBtn">
           <svg
             width="17"
             height="18"

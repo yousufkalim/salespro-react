@@ -1,10 +1,39 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import WorkflowsBtnIcon from '../../assets/WorkflowsBtnIcon.svg';
+import React, { useState } from 'react';
+import OurFeatureStep from './OurFeatureStep';
 import OurFeaturesImg from '../../assets/OurFeaturesImg.svg';
+import OurFeaturesImg2 from '../../assets/OurFeaturesImg2.svg';
+import OurFeaturesImg3 from '../../assets/OurFeaturesImg3.svg';
+import OurFeaturesImg4 from '../../assets/OurFeaturesImg4.svg';
+
+const sliderName = [
+  {
+    id: 1,
+    link: 'SMS',
+  },
+  {
+    id: 2,
+    link: 'Email',
+  },
+  {
+    id: 3,
+    link: 'Ringless Voicemails',
+  },
+  {
+    id: 4,
+    link: 'Website & Funnel Creation',
+  },
+];
 
 function UnlimitedFeatures() {
+  const [showCompnent, setShowCompont] = useState(1);
+  // const [activeId, setActiveId] = useState(1);
+
+  const nextStepsEvent = (i) => {
+    setShowCompont(i);
+  };
   return (
     <div>
       <div className="Unlimiteds">
@@ -17,49 +46,48 @@ function UnlimitedFeatures() {
             </p>
           </div>
           <div className="Unlimiteds_navLink">
-            <a href="" className="Unlimiteds_links">
-              <span className="counting">1</span> SMS
-            </a>
-            <a href="" className="Unlimiteds_links">
-              <span className="counting">2</span> Email
-            </a>
-            <a href="" className="Unlimiteds_links">
-              <span className="counting">3</span> Ringless Voicemails
-            </a>
-            <a href="" className="Unlimiteds_links">
-              <span className="counting">4</span> Website & Funnel Creation
-            </a>
+            {sliderName.map((navValue) => (
+              <div
+                id={navValue?.id}
+                className={
+                  navValue?.id === showCompnent ? 'active_unlimied_links' : 'Unlimiteds_links'
+                }
+                onClick={() => nextStepsEvent(navValue?.id)}
+                onKeyDown={nextStepsEvent}
+              >
+                <span className="counting">{navValue.id}</span> {navValue.link}
+              </div>
+            ))}
           </div>
           <div className="OurFeatures">
-            <div className="OurFeatures_center">
-              <div className="OurFeatures_col">
-                <p className="OurFeatures_p">OUR Features</p>
-                <p className="OurFeatures_title">Unlimited SMS</p>
-                <p className="OurFeatures_heading">
-                  Salespro Direct SMS capabilities allow you to:
-                </p>
-                <div className="OurFeatures_li_div">
-                  <li className="OurFeatures_li">
-                    Send unlimited SMS messages to prospects directly through Salespro Direct
-                  </li>
-                  <li className="OurFeatures_li">Create automated SMS messages</li>
-                  <li className="OurFeatures_li">
-                    Draft SMS templates to fire out quickly to prospects
-                  </li>
-                  <li className="OurFeatures_li">
-                    Write personalized SMS messages for specific prospects
-                  </li>
-                  <li className="OurFeatures_li">Prospect with unlimited outbound SMS campaigns</li>
-                  <li className="OurFeatures_li">Automate your follow up process</li>
-                </div>
-                <button type="button" className="OurFeatures_btn">
-                  Get Started <img src={WorkflowsBtnIcon} alt="" className="Workflows_btnIcon" />
-                </button>
-              </div>
-              <div className="OurFeatures_col">
-                <img src={OurFeaturesImg} alt="" className="OurFeatures_img" />
-              </div>
-            </div>
+            {showCompnent === 1 && (
+              <OurFeatureStep
+                title="Unlimited SMS"
+                ourP="Salespro Direct SMS capabilities allow you to:"
+                img={OurFeaturesImg}
+              />
+            )}
+            {showCompnent === 2 && (
+              <OurFeatureStep
+                title="Unlimited Email"
+                ourP="Salespro Direct allows you to:"
+                img={OurFeaturesImg2}
+              />
+            )}
+            {showCompnent === 3 && (
+              <OurFeatureStep
+                title="Unlimited Ringless Voicemails"
+                ourP="Using our unlimited ringless voicemail feature you can:"
+                img={OurFeaturesImg3}
+              />
+            )}
+            {showCompnent === 4 && (
+              <OurFeatureStep
+                title="Unlimited Website & Funnel Creation"
+                ourP="Host both your company website and funnel out of Salespro Direct. Build conversion optimized funnels within minutes that book loads of sales calls with high intent prospects."
+                img={OurFeaturesImg4}
+              />
+            )}
           </div>
         </div>
       </div>
