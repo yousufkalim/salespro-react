@@ -2,7 +2,7 @@
 import React from 'react';
 import Trail from '../../assets/images/free_trail.png';
 
-function StopWasting() {
+function Trial() {
   return (
     <div className="">
       <div className="StopWasting">
@@ -22,4 +22,4 @@ function StopWasting() {
   );
 }
 
-export default StopWasting;
+export default Trial;
