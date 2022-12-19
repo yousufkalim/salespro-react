@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
 
         <div className="footerLogoContainer">
-          <div>
+          <div className="footerLogoDiv">
             <img src={Logo} alt="Logo" />
           </div>
         </div>

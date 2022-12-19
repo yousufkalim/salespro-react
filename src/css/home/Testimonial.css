@@ -4,16 +4,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../../assets//images/bluelite_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
 }
 .testimonialMainDiv {
   width: 60%;
-  background-image: url(../../assets/images/dotted_bg.svg);
+  background-image: url(../../assets/images/testimonial_sub_bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 5% 0;
+  position: relative;
 }
 .testimonialFeedbackDiv {
   width: 70%;
@@ -63,12 +68,28 @@
   width: 70%;
   margin: 0 auto 10% auto;
 }
+
+.testimonialFeedbackBtn {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12%;
+}
+.testimonialFeedbackBackBtn {
+  width: 30%;
+}
+.testimonialFeedbackNextBtn {
+  width: 55%;
+}
 .testimonialFreeTrialDiv {
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 5%;
+  padding: 1% 5%;
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -104,4 +125,58 @@
 }
 .testimonialFreeTrialImgDiv {
   width: 30%;
+}
+.testimonialFreeTrialImgDiv img {
+  width: 100%;
+}
+@media only screen and (max-width: 1366px) {
+  .testimonialFreeTrialDiv {
+    width: 80%;
+  }
+  .testimonialMainDiv {
+    width: 80%;
+  }
+  .testimonialFeedbackDiv {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .testimonialFreeTrialTextDiv h2 {
+    font-size: 28px;
+  }
+  .testimonialFreeTrialTextDiv p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .testimonialFreeTrialDiv {
+    width: 90%;
+  }
+  .testimonialClientDiv {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .testimonialFreeTrialDiv {
+    padding: 2% 5%;
+  }
+  .testimonialFreeTrialTextDiv h2 {
+    font-size: 24px;
+  }
+  .testimonialFreeTrialTextDiv p {
+    font-size: 14px;
+  }
+  .testimonialFreeTrialBtn {
+    padding: 3% 8%;
+    font-size: 14px;
+  }
+  .testimonialMainDiv {
+    width: 90%;
+  }
+  .testimonialFeedbackDiv {
+    width: 90%;
+  }
+  .testimonialFeedbackBtn {
+    width: 15%;
+  }
 }
