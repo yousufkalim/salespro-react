@@ -6,12 +6,22 @@ import { Routes, Route } from 'react-router-dom';
 // Routes
 import Home from '../containers/Home';
 import Features from './../containers/Features';
+import SignUp from '../containers/SignUp';
+import BusinessInfo from '../containers/BusinessInfo';
+// import BillingInfo from '../containers/BillingInfo';
+import ThankYou from '../containers/ThankYou';
+import Login from '../containers/Login';
 
 function Index() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/features" element={<Features />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/businessinfo" element={<BusinessInfo />} />
+      {/* <Route path="/billinginfo" element={<BillingInfo />} /> */}
+      <Route path="/thankyou" element={<ThankYou />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 }

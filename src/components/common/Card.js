@@ -70,7 +70,6 @@ export default function BasicCard(props) {
             <p>All analytics features</p>
           </div>
         </div>
-
         <div className="cardButtonDiv">Get started</div>
       </div>
     </>

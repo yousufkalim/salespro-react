@@ -1,0 +1,134 @@
+.main-business-container {
+  height: 100vh;
+  display: flex;
+}
+.stepper-head {
+  width: 60%;
+  padding-top: 3%;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.right-side {
+  height: 90vh;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.grey-box {
+  /* margin-top: 5%; */
+  background: linear-gradient(180deg, rgba(35, 111, 218, 0.05) 0%, rgba(42, 127, 248, 0.05) 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.row-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.included {
+  margin: 2% 0 1.5% 0;
+}
+.row-data-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  line-height: 2;
+}
+.featrues {
+  display: flex;
+  gap: 15px;
+}
+.feature {
+  font-weight: 400;
+  font-size: 18px;
+}
+.Design-div {
+  display: flex;
+  gap: 20px;
+}
+.startups-div {
+  line-height: 30px;
+}
+.startup {
+  color: #919b9b;
+  font-weight: 500;
+  font-size: 18px;
+}
+.enterprice {
+  color: #454238;
+  font-weight: 700;
+  font-size: 24px;
+}
+.monthly {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0051c4;
+}
+.monthly-p {
+  color: #919b9b;
+  font-weight: 500;
+  font-size: 20px;
+}
+.monthly-p2 {
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+}
+.amount {
+  color: #ff403e;
+  font-weight: 700;
+  font-size: 54px;
+}
+.left-side {
+  background: linear-gradient(180deg, #236fda 0%, #2a7ff8 100%);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.leftSide-tagline-div {
+  width: 55%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: 3%;
+}
+.continue-btn-div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: 35%;
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.right-continue {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.orange-box {
+  /* margin-top: 5%; */
+  background: rgba(255, 64, 62, 0.1);
+  border-radius: 20px;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+}

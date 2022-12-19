@@ -1,0 +1,89 @@
+.main-container-popup {
+  background-image: url('../../assets/PurpleBG.svg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+}
+.main-pop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-pop {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #ffffff;
+  box-shadow: 0px 2.74726px 34.3408px 3.43408px rgba(0, 0, 0, 0.1);
+  border-radius: 34.3408px;
+  padding: 50px;
+}
+.label {
+  margin-bottom: 5px;
+}
+.label-input {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+.all-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+.input-field {
+  border-radius: 14px;
+  padding: 10px 20px;
+  border: 2px solid #e1e1e1;
+  font-weight: 700;
+  font-size: 14px;
+  color: #454238;
+}
+.input-field::placeholder {
+  color: #919b9b;
+  font-weight: 500;
+  font-size: 14px;
+}
+.login-sentence {
+  color: #919b9b;
+  margin-bottom: 20px;
+}
+.login {
+  color: #ff403e;
+}
+.reg-btn-p {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.submitting-info {
+  width: 50%;
+}
+.registerBtnDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: 35%;
+  background-color: #ff8045;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.submitting-info {
+  font-weight: 500;
+  font-size: 16px;
+  color: #919b9b;
+}
+.privacy {
+  color: #0051c4;
+  text-decoration: underline;
+}
