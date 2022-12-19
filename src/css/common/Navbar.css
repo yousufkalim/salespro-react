@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   background: transparent;
-  position: relative;
+  position: absolute;
   justify-content: space-between;
   z-index: 1300;
 }

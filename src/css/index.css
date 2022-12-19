@@ -5,6 +5,7 @@
 /* Importing all CSS files */
 @import url('./Header.css');
 @import url('./Features.css');
+@import url('./Pricing.css');
 @import url('./common/Navbar.css');
 @import url('./common/Card.css');
 @import url('./common/Footer.css');
