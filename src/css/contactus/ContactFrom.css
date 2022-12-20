@@ -107,6 +107,10 @@
   text-transform: capitalize;
   color: #ffffff;
 }
+.attachFileIcon {
+  transform: rotate(45deg);
+  color: #2a7ff8;
+}
 @media only screen and (max-width: 1024px) {
   .contactUsBtnContainer p {
     width: 70%;

@@ -51,7 +51,7 @@ export default function ContactForm() {
                     style={{ position: 'absolute', opacity: '0', width: '100%' }}
                     type="file"
                   />
-                  <AttachFile style={{ color: '#2A7FF8' }} />
+                  <AttachFile className="attachFileIcon" />
                 </div>
 
                 <p>Add Any Attachment</p>
