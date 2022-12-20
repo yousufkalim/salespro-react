@@ -5,7 +5,7 @@ import PricingCard from './PlanCard';
 function HeroSeciton() {
   return (
     <div>
-      <div className="hero">
+      <div className="heroPricing">
         <div className="hero_section_pricing">
           <div className="hero_content">
             <p className="hero_sales_pricing">Flexible Pricing Plans</p>
