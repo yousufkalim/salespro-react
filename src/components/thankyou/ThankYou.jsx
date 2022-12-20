@@ -7,7 +7,7 @@ function Thankyou() {
       <div className="main-thankyou">
         <h1 className="thankyou">Thank You</h1>
         <div>
-          <img src={Think} alt="asd" />
+          <img className="think" src={Think} alt="asd" />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ function LeftSide() {
   return (
     <div className="left-side">
       <div className="white-log-div">
-        <img src={whiteLogo} alt="" />
+        <img className="white-logo" src={whiteLogo} alt="" />
       </div>
       <div className="leftSide-tagline-div">
         <h3>The best work solution, for the best price.</h3>

@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   width: 100%;
   background-size: contain;
+  background-position-y: -55px;
 }
 .main-thankyou {
   width: 40%;
@@ -21,4 +22,29 @@
   font-size: 60px;
   color: #454238;
   font-family: 'Righteous';
+}
+@media screen and (max-width: 1200px) {
+  .main-thankyou {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .thankyou {
+    font-size: 45px;
+  }
+  .think {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .thankyou {
+    font-size: 35px;
+    white-space: nowrap;
+  }
+  .main-container-thankyou {
+    background-position-y: 0;
+  }
+  .main-container-popup {
+    background-position-y: 0;
+  }
 }

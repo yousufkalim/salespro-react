@@ -12,7 +12,7 @@ import SecondaryNavbar from './../components/common/SecondaryNavbar';
 function Features() {
   return (
     <div>
-      <SecondaryNavbar />
+      <SecondaryNavbar btn />
       <HeroSection />
       <SalesProOverview />
       <Workflows />

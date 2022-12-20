@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   width: 100%;
   background-size: contain;
+  background-position-y: -55px;
 }
 .main-pop-container {
   display: flex;
@@ -29,7 +30,11 @@
   padding: 50px;
 }
 .label {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
 }
 .label-input {
   display: flex;
@@ -44,7 +49,7 @@
   justify-content: space-between;
 }
 .input-field {
-  border-radius: 14px;
+  border-radius: 16px;
   padding: 10px 20px;
   border: 2px solid #e1e1e1;
   font-weight: 700;
@@ -93,4 +98,37 @@
 .privacy {
   color: #0051c4;
   text-decoration: underline;
+}
+@media screen and (max-width: 1200px) {
+  .main-pop {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-pop {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .all-inputs {
+    flex-direction: column;
+  }
+  .main-pop {
+    width: min-content;
+  }
+  .label-input {
+    width: min-content;
+  }
+  .reg-btn-p {
+    flex-direction: column;
+    align-items: center;
+  }
+  .submitting-info {
+    width: 100%;
+  }
+  .registerBtnDiv {
+    margin-top: 7%;
+    width: 100%;
+    padding: 6%;
+  }
 }

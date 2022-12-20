@@ -26,12 +26,12 @@ function Popup() {
           <p className="policy">
             By submitting my information, I confirm that I have read and understood the{' '}
             <span className="term">Terms of services</span> &{' '}
-            <span className="priv">Privacy Policy</span> .
+            <span className="privacy">Privacy Policy.</span>
           </p>
         </div>
       </div>
-      <div>
-        <img src={Illustration} alt="Illustration" />
+      <div className="illustration-div">
+        <img className="illustration" src={Illustration} alt="Illustration" />
       </div>
     </div>
   );

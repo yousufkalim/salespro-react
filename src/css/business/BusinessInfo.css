@@ -1,5 +1,4 @@
 .main-business-container {
-  height: 100vh;
   display: flex;
 }
 .stepper-head {
@@ -23,7 +22,7 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 6%;
 }
 .row-data {
   display: flex;
@@ -104,6 +103,11 @@
   color: #ffffff;
   margin-top: 3%;
 }
+.leftSide-tagline-div h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
 .continue-btn-div {
   cursor: pointer;
   display: flex;
@@ -125,10 +129,76 @@
   justify-content: flex-end;
 }
 .orange-box {
-  /* margin-top: 5%; */
+  margin-top: 2%;
   background: rgba(255, 64, 62, 0.1);
   border-radius: 20px;
-  padding: 30px 50px;
+  padding: 4% 6%;
   display: flex;
   flex-direction: column;
+}
+.white-log-div {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .row-data-2 {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .continue-btn-div {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-business-container {
+    height: 100vh;
+  }
+
+  .amount {
+    font-size: 40px;
+  }
+  .row-data {
+    flex-direction: column;
+  }
+  .right-side {
+    height: unset;
+  }
+  .leftSide-tagline-div {
+    width: 100%;
+  }
+  .leftSide-tagline-div h3 {
+    font-size: 20px;
+  }
+  .white-logo {
+    width: 70%;
+  }
+  .row-data-2 {
+    flex-direction: column;
+  }
+  .orange-box {
+    padding: 2% 6%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .stepper-head {
+    width: 100%;
+  }
+  .continue-btn-div {
+    width: 60%;
+  }
+  .monthly {
+    font-size: 18px;
+  }
+  .enterprice {
+    font-size: 18px;
+  }
+  .startup {
+    font-size: 14px;
+  }
+  .feature {
+    font-size: 14px;
+  }
+  .leftSide-tagline-div h3 {
+    font-size: 14px;
+  }
 }
