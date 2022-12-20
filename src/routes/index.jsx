@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../containers/Home';
 import Features from './../containers/Features';
 import Pricing from './../containers/Pricing';
+import Enterprise from './../containers/Enterprise';
 import SignUp from '../containers/SignUp';
 import BusinessInfo from '../containers/BusinessInfo';
 // import BillingInfo from '../containers/BillingInfo';
@@ -19,6 +20,7 @@ function Index() {
       <Route path="/" element={<Home />} />
       <Route path="/features" element={<Features />} />
       <Route path="/pricing" element={<Pricing />} />
+      <Route path="/enterprise" element={<Enterprise />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/businessinfo" element={<BusinessInfo />} />
       {/* <Route path="/billinginfo" element={<BillingInfo />} /> */}

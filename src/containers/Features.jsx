@@ -10,6 +10,16 @@ import Trial from '../components/Features/Trial';
 import SecondaryNavbar from './../components/common/SecondaryNavbar';
 
 function Features() {
+  React.useState(false);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 1,
+      behavior: 'smooth',
+    });
+  };
+  React.useEffect(() => {
+    scrollToTop();
+  }, []);
   return (
     <div>
       <SecondaryNavbar />

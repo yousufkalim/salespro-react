@@ -66,13 +66,12 @@
 .StopWasting {
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 3%;
   width: 70%;
   margin: 0 auto 10% auto;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
-
 .testimonialFeedbackBtn {
   position: absolute;
   bottom: 0;
@@ -133,6 +132,12 @@
 .testimonialFreeTrialImgDiv img {
   width: 100%;
 }
+@media only screen and (max-width: 1666px) {
+  .StopWasting {
+    padding: 0 3%;
+    border-radius: 20px;
+  }
+}
 @media only screen and (max-width: 1366px) {
   .testimonialFreeTrialDiv {
     width: 80%;
@@ -142,6 +147,10 @@
   }
   .testimonialFeedbackDiv {
     width: 80%;
+  }
+  .StopWasting {
+    padding: 2% 3%;
+    border-radius: 20px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -160,7 +169,7 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .testimonialFreeTrialDiv {
     padding: 2% 5%;
   }
@@ -182,5 +191,12 @@
   }
   .testimonialFeedbackBtn {
     width: 15%;
+  }
+  .StopWasting {
+    padding: 5% 5%;
+  }
+  .testimonialFreeTrialTextDiv,
+  .testimonialFreeTrialImgDiv {
+    width: 100%;
   }
 }

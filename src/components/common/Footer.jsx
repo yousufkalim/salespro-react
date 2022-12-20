@@ -47,7 +47,11 @@ export default function Footer() {
             <div className="footerMenu">
               <p className="footerMenuTitle">Company Menu</p>
               <p className="footerMenu">About us</p>
-              <p className="footerMenu">Enterprise</p>
+              <p className="footerMenu">
+                <Link to="/enterprise" className="footerMenu">
+                  Enterprise
+                </Link>
+              </p>
               <p className="footerMenu">Testimonials</p>
               <p className="footerMenu">Support</p>
             </div>
