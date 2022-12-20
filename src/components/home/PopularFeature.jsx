@@ -13,6 +13,25 @@ import { Link } from 'react-router-dom';
 import Image from '../../assets/images/popular_feature.svg';
 import SMS from '../../assets/images/sms_image.svg';
 
+const items = [
+  {
+    text: 'Auto Dealer',
+    id: '0',
+  },
+  {
+    text: 'Unlimited Messaging',
+    id: '1',
+  },
+  {
+    text: 'Integrated CRM',
+    id: '2',
+  },
+  {
+    text: 'Automation',
+    id: '3',
+  },
+];
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -47,10 +66,12 @@ function a11yProps(index) {
 }
 export default function PopularFeature() {
   const [value, setValue] = React.useState(0);
+  const [activeId, setactiveId] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
   return (
     <div className="popularFeatureContainer">
       <p className="popularFeatureTopHeading">MOST POPULAR FEATURES</p>
@@ -58,18 +79,18 @@ export default function PopularFeature() {
         <Box sx={{ width: '100%' }}>
           <Box>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-              <Tab className="popularFeatureTabsContainer" label="Auto Dealer" {...a11yProps(0)} />
-              <Tab
-                className="popularFeatureTabsContainer"
-                label="Unlimited Messaging"
-                {...a11yProps(1)}
-              />
-              <Tab
-                className="popularFeatureTabsContainer"
-                label="Integrated CRM"
-                {...a11yProps(2)}
-              />
-              <Tab className="popularFeatureTabsContainer" label="Automation" {...a11yProps(3)} />
+              {items.map((val, index) => (
+                <Tab
+                  onClick={(event) => setactiveId(event.target.id)}
+                  className={`${
+                    `simple-tab-${val?.id}` === activeId || val?.id === activeId
+                      ? 'popularFeatureTabsContainerActive'
+                      : 'popularFeatureTabsContainer '
+                  }`}
+                  label={val?.text}
+                  {...a11yProps(index)}
+                />
+              ))}
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>

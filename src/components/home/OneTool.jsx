@@ -6,7 +6,7 @@ export default function OneTool() {
   return (
     <div className="oneToolContainer">
       <div className="choosePlanHeadingDiv">
-        <p className="choosePlanHeadingTitle">All-In-One TOOL</p>
+        <p className="choosePlanHeadingTitle">ALL-IN-ONE TOOL</p>
         <p className="choosePlanHeadingSubTitle">Reduce your Sales tools budget by 97% !</p>
       </div>
       <div className="oneToolContentDiv">

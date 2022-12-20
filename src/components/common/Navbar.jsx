@@ -15,9 +15,11 @@ import Logo from '../../assets/images/logo.svg';
 export default function Navbar() {
   const position = useScrollPosition();
   const [open, setOpen] = React.useState(false);
+  const menuRoute = window.location.pathname;
   const handleClick = () => {
     setOpen(!open);
   };
+
   return (
     <div
       className="navbarContainer"
@@ -32,16 +34,39 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="navbarMenuDiv">
-          <Link className="navbarMenuLink" to="/">
-            Home
-          </Link>
-          <Link className="navbarMenuLink" to="/features">
-            Features
-          </Link>
-          <Link to="/pricing" className="navbarMenuLink">
-            Pricing
-          </Link>
-          <p className="navbarMenuLink">Enterprise</p>
+          <div>
+            <Link className={menuRoute === '/' ? 'navbarMenuLinkActive' : 'navbarMenuLink'} to="/">
+              Home
+            </Link>
+            <div className={menuRoute === '/' ? 'activeLine' : 'disable'} />
+          </div>
+          <div>
+            <Link
+              className={menuRoute === '/features' ? 'navbarMenuLinkActive' : 'navbarMenuLink'}
+              to="/features"
+            >
+              Features
+            </Link>
+            <div className={menuRoute === '/features' ? 'activeLine' : 'disable'} />
+          </div>
+          <div>
+            <Link
+              className={menuRoute === '/pricing' ? 'navbarMenuLinkActive' : 'navbarMenuLink'}
+              to="/features"
+            >
+              Pricing
+            </Link>
+            <div className={menuRoute === '/pricing' ? 'activeLine' : 'disable'} />
+          </div>
+          <div>
+            <Link
+              className={menuRoute === '/enterprise' ? 'navbarMenuLinkActive' : 'navbarMenuLink'}
+              to="/features"
+            >
+              Enterprise
+            </Link>
+            <div className={menuRoute === '/enterprise' ? 'activeLine' : 'disable'} />
+          </div>
         </div>
       </div>
       <div className="navbarRightDiv">

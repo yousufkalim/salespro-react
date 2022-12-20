@@ -104,13 +104,18 @@
 } */
 .popularFeatureTabsContainer {
   color: #919b9b !important;
+  text-transform: capitalize !important;
+  transition: 0.5s !important;
+}
+.popularFeatureTabsContainerActive {
+  color: #ff403e !important;
+  background: #ffffff !important;
+  text-transform: capitalize !important;
+  border-radius: 15px !important;
 }
 .popularFeatureTabsContainer:hover {
   color: #ff403e !important;
-  background: #ffffff !important;
-  border-radius: 15px !important;
 }
-
 .css-heg063-MuiTabs-flexContainer {
   overflow-x: scroll !important;
 }

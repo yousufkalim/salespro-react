@@ -39,6 +39,20 @@
   color: #919b9b;
   text-decoration: none;
 }
+.navbarMenuLinkActive {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff403e;
+  text-decoration: none;
+}
+.activeLine {
+  height: 2px;
+  background: #ff403e;
+  width: 100%;
+}
+.disable {
+  display: none;
+}
 #secNavbarMenuDiv p {
   color: white;
 }
