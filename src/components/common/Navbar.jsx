@@ -60,9 +60,9 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navbarRightDiv">
-        <p className="navbarContactBtn" style={{ marginRight: '5%' }}>
-          Contact us
-        </p>
+        <NavLink to="/contactus" className="navbarContactBtn">
+          Contact sales
+        </NavLink>
         <div className="navbarSignUpBtn">
           <svg
             width="17"

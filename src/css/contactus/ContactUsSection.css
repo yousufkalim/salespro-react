@@ -1,0 +1,113 @@
+.contactUsSectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10% 5%;
+}
+.contactUsSectionLeftDiv {
+  width: 30%;
+  margin-top: 3%;
+}
+.contactUsLeftTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #0051c4;
+  margin-bottom: 8%;
+}
+.contactUsContentBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+  padding: 2% 0;
+}
+.contactUsContentBoxIconDiv {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contactUsContentBoxIcon {
+  background: rgba(0, 81, 196, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactUsContentBoxText {
+  width: 85%;
+}
+.contactUsContentBoxText h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #454238;
+  margin-bottom: 2%;
+}
+.contactUsContentBoxText p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #919b9b;
+}
+
+.contactUsSectionRightDiv {
+  width: 60%;
+}
+@media only screen and (max-width: 1366px) {
+  .contactUsContentBoxText h2 {
+    font-size: 20px;
+  }
+  .contactUsContentBoxText p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .contactUsSectionContainer {
+    flex-direction: column-reverse;
+  }
+  .contactUsSectionRightDiv {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .contactUsSectionLeftDiv {
+    width: 100%;
+    margin-top: 8%;
+  }
+  .contactUsLeftTitle {
+    margin-bottom: 5%;
+  }
+  .contactUsContentBox {
+    justify-content: flex-start;
+    margin: 2% 0;
+    padding: 1% 0;
+  }
+  .contactUsContentBoxText {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contactUsSectionRightDiv {
+    width: 70%;
+    margin-top: 5%;
+  }
+  .contactUsContentBoxIconDiv {
+    margin-right: 3%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contactUsSectionRightDiv {
+    width: 90%;
+    margin-top: 8%;
+  }
+  .contactUsContentBox {
+    justify-content: flex-start;
+    margin: 3% 0;
+    padding: 1% 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contactUsContentBoxIconDiv {
+    margin-right: 3%;
+  }
+}
