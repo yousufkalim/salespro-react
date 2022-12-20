@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ListItemButton } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useScrollPosition } from '../../utils/ScrollPosition';
 import Logo from '../../assets/images/logo.svg';
 
@@ -15,7 +15,6 @@ import Logo from '../../assets/images/logo.svg';
 export default function Navbar() {
   const position = useScrollPosition();
   const [open, setOpen] = React.useState(false);
-  const menuRoute = window.location.pathname;
   const handleClick = () => {
     setOpen(!open);
   };
@@ -29,44 +28,35 @@ export default function Navbar() {
     >
       <div className="navbarLeftDiv">
         <div className="navbarLogoDiv">
-          <Link to="/">
+          <NavLink to="/">
             <img className="navbarLogo" src={Logo} alt="logo" />
-          </Link>
+          </NavLink>
         </div>
         <div className="navbarMenuDiv">
-          <div>
-            <Link className={menuRoute === '/' ? 'navbarMenuLinkActive' : 'navbarMenuLink'} to="/">
-              Home
-            </Link>
-            <div className={menuRoute === '/' ? 'activeLine' : 'disable'} />
-          </div>
-          <div>
-            <Link
-              className={menuRoute === '/features' ? 'navbarMenuLinkActive' : 'navbarMenuLink'}
-              to="/features"
-            >
-              Features
-            </Link>
-            <div className={menuRoute === '/features' ? 'activeLine' : 'disable'} />
-          </div>
-          <div>
-            <Link
-              className={menuRoute === '/pricing' ? 'navbarMenuLinkActive' : 'navbarMenuLink'}
-              to="/features"
-            >
-              Pricing
-            </Link>
-            <div className={menuRoute === '/pricing' ? 'activeLine' : 'disable'} />
-          </div>
-          <div>
-            <Link
-              className={menuRoute === '/enterprise' ? 'navbarMenuLinkActive' : 'navbarMenuLink'}
-              to="/features"
-            >
-              Enterprise
-            </Link>
-            <div className={menuRoute === '/enterprise' ? 'activeLine' : 'disable'} />
-          </div>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? 'navbarMenuLinkActive' : 'navbarMenuLink')}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/features"
+            className={({ isActive }) => (isActive ? 'navbarMenuLinkActive' : 'navbarMenuLink')}
+          >
+            Features
+          </NavLink>
+          <NavLink
+            to="/pricing"
+            className={({ isActive }) => (isActive ? 'navbarMenuLinkActive' : 'navbarMenuLink')}
+          >
+            Pricing
+          </NavLink>
+          <NavLink
+            to="/enterprise"
+            className={({ isActive }) => (isActive ? 'navbarMenuLinkActive' : 'navbarMenuLink')}
+          >
+            Enterprise
+          </NavLink>
         </div>
       </div>
       <div className="navbarRightDiv">
@@ -74,8 +64,6 @@ export default function Navbar() {
           Contact us
         </p>
         <div className="navbarSignUpBtn">
-          {/* <img src={PersonIcon} alt="icon" /> */}
-          {/* <PersonOutlineOutlinedIcon /> */}
           <svg
             width="17"
             height="18"
@@ -98,9 +86,9 @@ export default function Navbar() {
               strokeLinejoin="round"
             />
           </svg>
-          <Link className="navbarLink" to="/signup">
+          <NavLink className="navbarLink" to="/signup">
             Signup
-          </Link>
+          </NavLink>
         </div>
         <div className="navbarLoginBtn">
           {/* <img src={PersonIcon} alt="icon" /> */}
@@ -126,9 +114,9 @@ export default function Navbar() {
               strokeLinejoin="round"
             />
           </svg>
-          <Link className="navbarLinkLogin" to="/login">
+          <NavLink className="navbarLinkLogin" to="/login">
             Login
-          </Link>
+          </NavLink>
         </div>
       </div>
       <div className="navbarMobMenu">
@@ -139,33 +127,74 @@ export default function Navbar() {
       <Collapse className="navbarCollapseDiv" in={open} timeout="auto" unmountOnExit>
         <List className="navbarCollapseListDiv" component="div" disablePadding>
           <ListItemButton className="navbarCollapseListItems">
-            <Link className="navbarCollapseLink" to="/">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/"
+            >
               Home
-            </Link>
+            </NavLink>
           </ListItemButton>
           <ListItemButton>
-            <Link className="navbarCollapseLink" to="/features">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/features"
+            >
               Features
-            </Link>
+            </NavLink>
           </ListItemButton>
           <ListItemButton>
-            <Link className="navbarCollapseLink" to="/pricing">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/pricing"
+            >
               Pricing
-            </Link>
+            </NavLink>
           </ListItemButton>
           <ListItemButton>
-            <div>Enterprise</div>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/enterprise"
+            >
+              Enterprise
+            </NavLink>
           </ListItemButton>
           <ListItemButton>
-            <div>Contact Us</div>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/contactus"
+            >
+              Contact Us
+            </NavLink>
           </ListItemButton>
           <ListItemButton>
-            <Link className="navbarCollapseLink" to="/signup">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/signup"
+            >
               Signup
-            </Link>
+            </NavLink>
           </ListItemButton>
           <ListItemButton>
-            <div>Login</div>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/login"
+            >
+              Login
+            </NavLink>
           </ListItemButton>
         </List>
       </Collapse>

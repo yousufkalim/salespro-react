@@ -11,7 +11,7 @@
 .navbarContainer {
   width: 100%;
   display: flex;
-  padding: 0.5% 5%;
+  padding: 1% 5%;
   position: fixed;
   justify-content: space-between;
   z-index: 1300;
@@ -33,10 +33,16 @@
   text-decoration: none;
   color: #000000;
 }
+.navbarCollapseLinkActive {
+  text-decoration: none;
+  color: #ff403e;
+}
 .navbarMenuLink {
   font-weight: 500;
   font-size: 18px;
   color: #919b9b;
+  padding-bottom: 1%;
+
   text-decoration: none;
 }
 .navbarMenuLinkActive {
@@ -44,6 +50,8 @@
   font-size: 18px;
   color: #ff403e;
   text-decoration: none;
+  padding-bottom: 1%;
+  border-bottom: 2px solid #ff403e;
 }
 .activeLine {
   height: 2px;
@@ -91,6 +99,11 @@
 .navbarLink {
   text-decoration: none;
   color: #ffffff;
+}
+.navbarLinkActive {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 .navbarSignUpBtn {
   display: flex;
@@ -144,6 +157,7 @@
   background: white;
   width: 100%;
   white-space: nowrap;
+  margin-left: -5%;
 }
 .navbarCollapseListDiv {
   width: 100% !important;

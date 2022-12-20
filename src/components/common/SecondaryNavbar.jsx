@@ -10,7 +10,7 @@ import List from '@mui/material/List';
 import Collapse from '@mui/material/Collapse';
 import MenuIcon from '@mui/icons-material/Menu';
 import { ListItemButton } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // Component
 export default function SecondaryNavbar() {
@@ -22,21 +22,35 @@ export default function SecondaryNavbar() {
     <div className="secondaryNavbar">
       <div className="navbarLeftDiv">
         <div className="navbarLogoDiv">
-          <Link to="/">
+          <NavLink to="/">
             <img className="navbarLogo" src={Logo} alt="logo" />
-          </Link>
+          </NavLink>
         </div>
         <div className="navbarMenuDiv" id="secNavbarMenuDiv">
-          <Link className="navbarLink" to="/">
+          <NavLink
+            className={({ isActive }) => (isActive ? 'navbarLinkActive' : 'navbarLink')}
+            to="/"
+          >
             Home
-          </Link>
-          <Link className="navbarLink" to="/features">
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'navbarLinkActive' : 'navbarLink')}
+            to="/features"
+          >
             Features
-          </Link>
-          <Link className="navbarLink" to="/pricing">
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'navbarLinkActive' : 'navbarLink')}
+            to="/pricing"
+          >
             Pricing
-          </Link>
-          <p>Enterprise</p>
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'navbarLinkActive' : 'navbarLink')}
+            to="/enterprise"
+          >
+            Enterprise
+          </NavLink>
         </div>
       </div>
       <div className="navbarRightDiv">
@@ -64,9 +78,9 @@ export default function SecondaryNavbar() {
               stroke-linejoin="round"
             />
           </svg>
-          <Link to="/signup" style={{ textDecoration: 'none', color: '#ffffff' }}>
+          <NavLink to="/signup" style={{ textDecoration: 'none', color: '#ffffff' }}>
             Signup
-          </Link>
+          </NavLink>
         </div>
         <div
           className="navbarLoginBtn"
@@ -95,41 +109,90 @@ export default function SecondaryNavbar() {
             />
           </svg>
 
-          <Link to="/login" style={{ color: 'white', textDecoration: 'none' }}>
+          <NavLink to="/login" style={{ color: 'white', textDecoration: 'none' }}>
             Login
-          </Link>
+          </NavLink>
         </div>
       </div>
       <div className="navbarMobMenu">
         <div className="navbarMobMenuIcon" onClick={handleClick}>
           <MenuIcon />
         </div>
-        <Collapse className="navbarCollapseDiv" in={open} timeout="auto" unmountOnExit>
-          <List className="navbarCollapseListDiv" component="div" disablePadding>
-            <ListItemButton className="navbarCollapseListItems">
-              <Link to="/">Home</Link>
-            </ListItemButton>
-            <ListItemButton>
-              <Link to="/features"> Features</Link>
-            </ListItemButton>
-            <ListItemButton>
-              <Link to="/pricing">Pricing</Link>
-            </ListItemButton>
-            <ListItemButton>
-              <div>Enterprise</div>
-            </ListItemButton>
-            <ListItemButton>
-              <div>Contact Us</div>
-            </ListItemButton>
-            <ListItemButton>
-              <Link to="/signup">Signup</Link>
-            </ListItemButton>
-            <ListItemButton>
-              <Link to="/login">Login</Link>
-            </ListItemButton>
-          </List>
-        </Collapse>
       </div>
+      <Collapse className="navbarCollapseDiv" in={open} timeout="auto" unmountOnExit>
+        <List className="navbarCollapseListDiv" component="div" disablePadding>
+          <ListItemButton className="navbarCollapseListItems">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+          </ListItemButton>
+          <ListItemButton>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/features"
+            >
+              Features
+            </NavLink>
+          </ListItemButton>
+          <ListItemButton>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/pricing"
+            >
+              Pricing
+            </NavLink>
+          </ListItemButton>
+          <ListItemButton>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/enterprise"
+            >
+              Enterprise
+            </NavLink>
+          </ListItemButton>
+          <ListItemButton>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/contactus"
+            >
+              Contact Us
+            </NavLink>
+          </ListItemButton>
+          <ListItemButton>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/signup"
+            >
+              Signup
+            </NavLink>
+          </ListItemButton>
+          <ListItemButton>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navbarCollapseLinkActive' : 'navbarCollapseLink'
+              }
+              to="/login"
+            >
+              Login
+            </NavLink>
+          </ListItemButton>
+        </List>
+      </Collapse>
     </div>
   );
 }
