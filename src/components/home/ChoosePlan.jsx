@@ -15,12 +15,17 @@ export default function ChoosePlan() {
       </div>
       <div className="choosePlanCardDiv">
         <div className="choosePlanCardSubDiv">
-          <Card />
+          <Card
+            subTitle="For startups"
+            title="Monthly"
+            desp="For small startups willing to give it a try ! 14-days free trial!"
+            price="$49"
+          />
           <Card
             lite
             subTitle="For big companies"
             title="Enterprise"
-            desp="For companies willing to scale it up !"
+            desp="For companies willing to scale it up!"
             price="$199+"
           />
         </div>
