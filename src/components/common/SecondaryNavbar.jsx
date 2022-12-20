@@ -54,7 +54,9 @@ export default function SecondaryNavbar() {
         </div>
       </div>
       <div className="navbarRightDiv">
-        <p className="secNavbarContactBtn">Contact Sales</p>
+        <NavLink to="/contactus" className="secNavbarContactBtn">
+          Contact Sales
+        </NavLink>
         <div className="navbarSignUpBtn">
           <svg
             width="17"
