@@ -71,7 +71,7 @@ export default function Footer() {
       <div className="footerDivider" />
       <div className="footerBottomContainer">
         <div className="footerCopyrightDiv">
-          © 2020 <span> Salespro Direct </span> All Rights Reserved.
+          © {new Date().getFullYear()} <span> Salespro Direct </span> All Rights Reserved.
         </div>
         {/* <div className="footerSocialIconsDiv">
           <img className="footerSocialIcon" src={Facebook} alt="Facebook" />

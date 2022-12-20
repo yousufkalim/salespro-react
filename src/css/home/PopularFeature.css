@@ -105,7 +105,7 @@
 .popularFeatureTabsContainer {
   color: #919b9b !important;
 }
-.popularFeatureTabsContainer:focus {
+.popularFeatureTabsContainer:hover {
   color: #ff403e !important;
   background: #ffffff !important;
   border-radius: 15px !important;
