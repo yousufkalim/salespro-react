@@ -1,14 +1,14 @@
-import React from 'react';
-import LeftSide from '../components/business/LeftSide';
-import RightSide from '../components/billingInfo/RightSide';
+// import React from 'react';
+// import LeftSide from '../components/business/LeftSide';
+// import RightSide from '../components/billingInfo/RightSide';
 
-function BillingInfo() {
-  return (
-    <div className="main-business-container">
-      <LeftSide />
-      <RightSide />
-    </div>
-  );
-}
+// function BillingInfo() {
+//   return (
+//     <div className="main-business-container">
+//       <LeftSide />
+//       <RightSide />
+//     </div>
+//   );
+// }
 
-export default BillingInfo;
+// export default BillingInfo;

@@ -1,0 +1,175 @@
+.attatchment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding: 6%;
+  border: 2px solid #e1e1e1;
+  border-radius: 20px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #919b9b;
+  cursor: pointer;
+}
+.person-div {
+  display: flex;
+  align-items: center;
+}
+.contact-btn-div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 32px;
+  width: 30%;
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  gap: 2px;
+  margin-top: 5%;
+}
+.contact-btn-p {
+  display: flex;
+  justify-content: space-between;
+}
+.policy-div {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.contact-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.main-glitter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 20px 0 40px 0;
+  gap: 15px;
+}
+.glitter-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.associated-brands {
+  margin-top: 8%;
+  width: max-content;
+}
+.brands {
+  opacity: 0.8;
+}
+.join {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #454238;
+}
+.custom {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #919b9b;
+  text-align: left;
+}
+.love-salepro {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #454238;
+  margin-top: 40px;
+}
+.help-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+.help-p {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #919b9b;
+}
+.help {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #454238;
+}
+.contact {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #0051c4;
+}
+.main-contact {
+  background: url('../../assets/BG-4.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 8rem;
+  background-position-y: -8rem;
+}
+@media screen and ((max-width: 2560px) and (min-width:1441px)) {
+  .main-contact {
+    background-position-x: 0rem;
+    background-position-y: -22rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-left {
+    width: 60%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact-btn-div {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .policy-div {
+    width: 50%;
+  }
+  .policy {
+    font-size: 12px;
+  }
+  .contact-btn-div {
+    font-size: 14px;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-contact {
+    background: none;
+  }
+  .contact-btn-p {
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  .contact-btn-div {
+    width: 100%;
+    font-size: 12px;
+    padding: 12px 32px;
+  }
+  .policy-div {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}

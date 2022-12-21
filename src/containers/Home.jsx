@@ -16,7 +16,7 @@ import AskedQuestions from '../components/home/AskedQuestions';
 export default function Home() {
   return (
     <div className="homeContainer">
-      <Navbar />
+      <Navbar btn />
       <HomeHero />
       <PopularFeature />
       <div className="homeChooseAndMobileContainer">

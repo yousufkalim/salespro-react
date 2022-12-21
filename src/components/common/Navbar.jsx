@@ -12,7 +12,7 @@ import Logo from '../../assets/images/logo.svg';
 
 // import PersonIcon from '../../assets/images/person_icon.svg';
 // Component
-export default function Navbar() {
+export default function Navbar({ btn }) {
   const position = useScrollPosition();
   const [open, setOpen] = React.useState(false);
   const handleClick = () => {
@@ -59,6 +59,7 @@ export default function Navbar() {
           </NavLink>
         </div>
       </div>
+ {btn && (
       <div className="navbarRightDiv">
         <NavLink to="/contactsales" className="navbarContactBtn">
           Contact sales
@@ -118,7 +119,8 @@ export default function Navbar() {
             Login
           </NavLink>
         </div>
-      </div>
+        </div>
+      )}
       <div className="navbarMobMenu">
         <div className="navbarMobMenuIcon" onClick={handleClick}>
           <MenuIcon />

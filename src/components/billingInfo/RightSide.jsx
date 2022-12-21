@@ -10,7 +10,7 @@ import InputField from '../common/InputField';
 
 function RightSide() {
   return (
-    <div className="right-side">
+    <div className="right-side-billing">
       {/* <Box sx={{ width: '100%' }}>
         <Stepper activeStep={1} alternativeLabel>
           {steps.map((label) => (

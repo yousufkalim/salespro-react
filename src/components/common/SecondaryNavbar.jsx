@@ -13,7 +13,7 @@ import { ListItemButton } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 
 // Component
-export default function SecondaryNavbar() {
+export default function SecondaryNavbar({ btn }) {
   const [open, setOpen] = React.useState(false);
   const handleClick = () => {
     setOpen(!open);
@@ -53,6 +53,7 @@ export default function SecondaryNavbar() {
           </NavLink>
         </div>
       </div>
+{btn && (
       <div className="navbarRightDiv">
         <NavLink to="/contactsales" className="secNavbarContactBtn">
           Contact Sales
@@ -112,7 +113,8 @@ export default function SecondaryNavbar() {
             Login
           </NavLink>
         </div>
-      </div>
+       </div>
+      )}
       <div className="navbarMobMenu">
         <div className="navbarMobMenuIcon" onClick={handleClick}>
           <MenuIcon />

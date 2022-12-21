@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../components/common/Footer';
-import Navbar from '../components/common/Navbar';
+import SecondaryNavbar from '../components/common/SecondaryNavbar';
 import Thankyou from '../components/thankyou/ThankYou';
 
 function ThankYou() {
   return (
     <div className="main-container-thankyou">
-      <Navbar />
+      <SecondaryNavbar />
       <Thankyou />
       <Footer />
     </div>

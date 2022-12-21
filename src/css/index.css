@@ -16,11 +16,12 @@
 @import url('./home/OneTool.css');
 @import url('./home/Testimonial.css');
 @import url('./home/AskedQuestions.css');
-@import url('./common/PopUp.css');
+@import url('./signup/SignUp.css');
 @import url('./business/BusinessInfo.css');
 @import url('./billingInfo/BillingInfo.css');
 @import url('./thankyou/ThankYou.css');
 @import url('./login/Login.css');
+@import url('./contact/Contact.css');
 @import url('./Enterprise.css');
 @import url('./contactus/ContactUsSection.css');
 @import url('./contactus/ContactFrom.css');

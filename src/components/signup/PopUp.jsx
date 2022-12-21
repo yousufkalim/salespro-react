@@ -9,7 +9,7 @@ function PopUp() {
         <h1>Sign up</h1>
         <div className="all-inputs">
           <div className="label-input">
-            <InputField label="Full name" type="text" />
+            <InputField label="Full Name" type="text" />
           </div>
           <div className="label-input">
             <InputField label="Phone" type="tel" />
@@ -28,7 +28,10 @@ function PopUp() {
           </div>
         </div>
         <p className="login-sentence">
-          You Have account <span className="login">Login</span>
+          You Have account{' '}
+          <Link className="link" to="/login">
+            <span className="login">Login</span>
+          </Link>
         </p>
         <div className="reg-btn-p">
           <p className="submitting-info">

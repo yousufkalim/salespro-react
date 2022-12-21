@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import InputField from '../common/InputField';
 import Illustration from '../../assets/Illustration.svg';
 
@@ -21,17 +22,20 @@ function Popup() {
         <div className="Login-btn-div">Login</div>
         <div className="no-account">
           <p className="no-account-p ">
-            You Dont Have account <span className="sign">Sign-Up</span>
+            You Dont Have account{' '}
+            <Link className="link" to="/signup">
+              <span className="sign">Sign-Up</span>
+            </Link>
           </p>
           <p className="policy">
             By submitting my information, I confirm that I have read and understood the{' '}
             <span className="term">Terms of services</span> &{' '}
-            <span className="priv">Privacy Policy</span> .
+            <span className="privacy">Privacy Policy.</span>
           </p>
         </div>
       </div>
-      <div>
-        <img src={Illustration} alt="Illustration" />
+      <div className="illustration-div">
+        <img className="illustration" src={Illustration} alt="Illustration" />
       </div>
     </div>
   );

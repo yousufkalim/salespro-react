@@ -11,7 +11,7 @@ import PricingTable from '../components/pricing/Table';
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      <Navbar btn />
       <HeroSection />
       <PricingTable />
       <Footer />

@@ -22,7 +22,7 @@ function Features() {
   }, []);
   return (
     <div>
-      <SecondaryNavbar />
+      <SecondaryNavbar btn />
       <HeroSection />
       <SalesProOverview />
       <Workflows />

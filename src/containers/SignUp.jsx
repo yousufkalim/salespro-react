@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from '../components/common/Footer';
-import Navbar from '../components/common/Navbar';
+import SecondaryNavbar from '../components/common/SecondaryNavbar';
 import PopUp from '../components/signup/PopUp';
 
 function SignUp() {
   return (
     <div className="main-container-popup">
-      <Navbar />
+      <SecondaryNavbar />
       <PopUp />
       <Footer />
     </div>

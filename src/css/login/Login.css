@@ -2,7 +2,6 @@
   background-image: url('../../assets/BG-3.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 450px;
 }
 .label-input3 {
   display: flex;
@@ -30,7 +29,8 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row-reverse;
-  height: 100vh;
+  padding: 9% 0;
+  /* height: 100vh; */
 }
 .account-login {
   margin-bottom: 5%;
@@ -56,6 +56,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  cursor: pointer;
 }
 .Login-btn-div {
   margin-top: 5%;
@@ -102,7 +103,67 @@
 }
 .term {
   color: #ff403e;
+  text-decoration: underline;
+  cursor: pointer;
 }
-.priv {
-  color: #0051c4;
+.illustration-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .main-login {
+    background-position-x: 2rem;
+    background-position-y: -22rem;
+  }
+}
+@media screen and ((max-width: 2560px) and (min-width:1800px)) {
+  .main-login {
+    background-position-x: 0rem;
+    background-position-y: -36rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .illustration {
+    width: 55%;
+  }
+  .main-login-container {
+    justify-content: center;
+    height: unset;
+    flex-direction: column;
+    padding-top: 10%;
+    margin-bottom: 5px;
+  }
+  .main-login-box {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-login-box {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main-login {
+    background: none;
+  }
+
+  .main-login-box {
+    width: 70%;
+  }
+  .forgot-pass {
+    font-size: 12px;
+  }
+  .account-login {
+    font-size: 30px;
+  }
+  .main-login-container {
+    padding-top: 20%;
+  }
+  .no-account-p {
+    font-size: 12px;
+  }
+  .policy {
+    font-size: 12px;
+  }
 }
