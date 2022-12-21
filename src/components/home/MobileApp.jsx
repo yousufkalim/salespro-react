@@ -4,14 +4,12 @@ import RightImage from '../../assets/images/mobile_section.svg';
 import Tick from '../../assets/images/blue_tick.svg';
 import Google from '../../assets/images/google_store.png';
 import Apple from '../../assets/images/apple_store.png';
+import SectionHeader from '../common/SectionHeader';
 
 export default function MobileApp() {
   return (
     <div className="MobileAppContainer">
-      <div className="choosePlanHeadingDiv">
-        <p className="choosePlanHeadingTitle">MOBILE APP</p>
-        <p className="choosePlanHeadingSubTitle">Moving Fast for Better Sales</p>
-      </div>
+      <SectionHeader title="MOBILE APP" subTitle="Moving Fast for Better Sales" />
       <div className="MobileAppMainDiv">
         <div className="MobileAppLeftDiv">
           <div className="MobileAppTitle">

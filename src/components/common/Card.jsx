@@ -1,4 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
 // Init
 import * as React from 'react';
 import Icon from '../../assets/images/card_icon.svg';
@@ -7,56 +6,47 @@ import BlueTick from '../../assets/images/blue_tick.svg';
 import WhiteTick from '../../assets/images/white_tick.svg';
 
 export default function BasicCard(props) {
+  const { lite, subTitle, title, desp, price } = props;
   return (
-    <div className={props.lite ? 'cardContainerLite' : 'cardContainer'}>
+    <div className={lite ? 'cardContainerLite' : 'cardContainer'}>
       <div className="cardHeaderDiv">
         <div className="cardHeaderIconDiv">
-          <img src={props.lite ? IconLite : Icon} alt="icon" />
+          <img src={lite ? IconLite : Icon} alt="icon" />
         </div>
         <div className="cardHeaderTitleDiv">
-          <p className={props.lite ? 'cardHeaderTitleLite' : 'cardHeaderTitle'}>
-            {props.subTitle ? props.subTitle : 'For startups'}
-          </p>
-          <p className={props.lite ? 'cardHeaderSubTitleLite' : 'cardHeaderSubTitle'}>
-            {props.title ? props.title : 'Monthly'}
-          </p>
+          <p className={lite ? 'cardHeaderTitleLite' : 'cardHeaderTitle'}>{subTitle}</p>
+          <p className={lite ? 'cardHeaderSubTitleLite' : 'cardHeaderSubTitle'}>{title}</p>
         </div>
-        <div className={props.lite ? 'cardHeaderBadgeLite' : 'cardHeaderBadge'}>Popular</div>
+        <div className={lite ? 'cardHeaderBadgeLite' : 'cardHeaderBadge'}>Popular</div>
       </div>
-      <div className={props.lite ? 'cardHeaderDespLite' : 'cardHeaderDesp'}>
-        {props.desp
-          ? props.desp
-          : 'For small startups willing to give it a try ! 14-days free trial !'}
-      </div>
-      <div className={props.lite ? 'cardPriceDivLite' : 'cardPriceDiv'}>
-        {props.price ? props.price : '$49'}
+      <div className={lite ? 'cardHeaderDespLite' : 'cardHeaderDesp'}>{desp}</div>
+      <div className={lite ? 'cardPriceDivLite' : 'cardPriceDiv'}>
+        {price}
         <span>/monthly </span>
       </div>
       <div className="cardListMainDiv">
-        <div className={props.lite ? 'cardListHeadingLite' : 'cardListHeading'}>
-          What’s included
-        </div>
-        <div className={props.lite ? 'cardListDivLite' : 'cardListDiv'}>
+        <div className={lite ? 'cardListHeadingLite' : 'cardListHeading'}>What’s included</div>
+        <div className={lite ? 'cardListDivLite' : 'cardListDiv'}>
           <div className="cardListIconDiv">
-            <img src={props.lite ? WhiteTick : BlueTick} alt="tick" />
+            <img src={lite ? WhiteTick : BlueTick} alt="tick" />
           </div>
           <p>All analytics features</p>
         </div>
-        <div className={props.lite ? 'cardListDivLite' : 'cardListDiv'}>
+        <div className={lite ? 'cardListDivLite' : 'cardListDiv'}>
           <div className="cardListIconDiv">
-            <img src={props.lite ? WhiteTick : BlueTick} alt="tick" />
+            <img src={lite ? WhiteTick : BlueTick} alt="tick" />
           </div>
           <p>All analytics features</p>
         </div>
-        <div className={props.lite ? 'cardListDivLite' : 'cardListDiv'}>
+        <div className={lite ? 'cardListDivLite' : 'cardListDiv'}>
           <div className="cardListIconDiv">
-            <img src={props.lite ? WhiteTick : BlueTick} alt="tick" />
+            <img src={lite ? WhiteTick : BlueTick} alt="tick" />
           </div>
           <p>All analytics features</p>
         </div>
-        <div className={props.lite ? 'cardListDivLite' : 'cardListDiv'}>
+        <div className={lite ? 'cardListDivLite' : 'cardListDiv'}>
           <div className="cardListIconDiv">
-            <img src={props.lite ? WhiteTick : BlueTick} alt="tick" />
+            <img src={lite ? WhiteTick : BlueTick} alt="tick" />
           </div>
           <p>All analytics features</p>
         </div>
