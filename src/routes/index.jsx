@@ -7,12 +7,14 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../containers/Home';
 import Features from './../containers/Features';
 import Pricing from './../containers/Pricing';
+import Enterprise from './../containers/Enterprise';
 import SignUp from '../containers/SignUp';
 import BusinessInfo from '../containers/BusinessInfo';
 // import BillingInfo from '../containers/BillingInfo';
 import ThankYou from '../containers/ThankYou';
 import Login from '../containers/Login';
 import Contact from '../containers/Contact';
+import ContactUs from '../containers/ContactUs';
 
 function Index() {
   return (
@@ -20,11 +22,13 @@ function Index() {
       <Route path="/" element={<Home />} />
       <Route path="/features" element={<Features />} />
       <Route path="/pricing" element={<Pricing />} />
+      <Route path="/enterprise" element={<Enterprise />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/businessinfo" element={<BusinessInfo />} />
       <Route path="/thankyou" element={<ThankYou />} />
       <Route path="/login" element={<Login />} />
       <Route path="/contactsales" element={<Contact />} />
+      <Route path="/contactus" element={<ContactUs />} />
     </Routes>
   );
 }

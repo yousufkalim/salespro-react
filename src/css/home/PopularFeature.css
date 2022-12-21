@@ -53,6 +53,9 @@
   color: #0051c4;
   margin-bottom: 2%;
 }
+.popularFeatureListDiv {
+  margin: 2% 0;
+}
 .popularFeatureList {
   font-weight: 500;
   font-size: 18px;
@@ -104,13 +107,18 @@
 } */
 .popularFeatureTabsContainer {
   color: #919b9b !important;
+  text-transform: capitalize !important;
+  transition: 0.5s !important;
+}
+.popularFeatureTabsContainerActive {
+  color: #ff403e !important;
+  background: #ffffff !important;
+  text-transform: capitalize !important;
+  border-radius: 15px !important;
 }
 .popularFeatureTabsContainer:hover {
   color: #ff403e !important;
-  background: #ffffff !important;
-  border-radius: 15px !important;
 }
-
 .css-heg063-MuiTabs-flexContainer {
   overflow-x: scroll !important;
 }
@@ -118,6 +126,9 @@
   display: none !important;
 }
 @media only screen and (max-width: 900px) {
+  .popularFeatureMainDiv {
+    background: linear-gradient(180.01deg, #e0f4ff 5.7%, rgba(255, 255, 255, 0) 77.68%);
+  }
   .popularFeatureSubDiv {
     flex-direction: column-reverse;
   }

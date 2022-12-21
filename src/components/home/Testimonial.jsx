@@ -1,17 +1,16 @@
 // Init
 import React from 'react';
 import Avatar from '../../assets/images/testimonial_avatar.png';
-import Trail from '../../assets/images/free_trail.png';
 import Next from '../../assets/images/next.svg';
 import Back from '../../assets/images/back.svg';
+import SectionHeader from '../common/SectionHeader';
+import FreeTrail from '../common/FreeTrail';
 
-export default function ClientTestimonial() {
+export default function ClientTestimonial(props) {
+  const { freeTrail } = props;
   return (
-    <div className="testimonialContainer">
-      <div className="choosePlanHeadingDiv">
-        <p className="choosePlanHeadingTitle">BE PART OF THE CHANGE !</p>
-        <p className="choosePlanHeadingSubTitle">Client Testimonials</p>
-      </div>
+    <div className={freeTrail ? 'testimonialContainerBG' : 'testimonialContainer'}>
+      <SectionHeader title="BE PART OF THE CHANGE !" subTitle="Client Testimonials" />
 
       <div className="testimonialMainDiv">
         <div className="testimonialFeedbackDiv">
@@ -36,19 +35,7 @@ export default function ClientTestimonial() {
         </div>
       </div>
 
-      <div className="testimonialFreeTrialDiv">
-        <div className="testimonialFreeTrialTextDiv">
-          <h2>Stop wasting time with manual outreach.</h2>
-          <p>
-            Salespro Direct takes less than 5 minutes to setup, allows you to work 10x as fast, and
-            will increase sales from Day 1
-          </p>
-          <div className="testimonialFreeTrialBtn">Start Free Trial</div>
-        </div>
-        <div className="testimonialFreeTrialImgDiv">
-          <img src={Trail} alt="Trail" />
-        </div>
-      </div>
+      {freeTrail && <FreeTrail />}
     </div>
   );
 }

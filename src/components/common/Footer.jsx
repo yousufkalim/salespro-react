@@ -26,30 +26,42 @@ export default function Footer() {
               <Link to="/" className="footerMenu">
                 Home
               </Link>
-              <br />
               <Link to="/pricing" className="footerMenu">
                 Pricing
               </Link>
-              <br />
               <Link to="/features" className="footerMenu">
                 Features
               </Link>
-              <p className="footerMenu">About us</p>
+              <Link to="/" className="footerMenu">
+                About us
+              </Link>
             </div>
             <div className="footerMenu">
               <p className="footerMenuTitle">Why Salespro</p>
               <Link to="/features" className="footerMenu">
                 Features
               </Link>
-              <p className="footerMenu">Terms and conditions</p>
-              <p className="footerMenu">Privacy Policy</p>
+              <Link to="/" className="footerMenu">
+                Terms and conditions
+              </Link>
+              <Link to="/" className="footerMenu">
+                Privacy Policy
+              </Link>
             </div>
             <div className="footerMenu">
               <p className="footerMenuTitle">Company Menu</p>
-              <p className="footerMenu">About us</p>
-              <p className="footerMenu">Enterprise</p>
-              <p className="footerMenu">Testimonials</p>
-              <p className="footerMenu">Support</p>
+              <Link to="/" className="footerMenu">
+                About us
+              </Link>
+              <Link to="/enterprise" className="footerMenu">
+                Enterprise
+              </Link>
+              <Link to="/" className="footerMenu">
+                Testimonials
+              </Link>
+              <Link to="/contactus" className="footerMenu">
+                Support
+              </Link>
             </div>
           </div>
           <div className="footerButtonContainer">

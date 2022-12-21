@@ -1,0 +1,135 @@
+.contactUsFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5%;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(145, 155, 155, 0.3);
+  box-shadow: 0px 2.74726px 34.3408px 3.43408px rgba(0, 0, 0, 0.1);
+  border-radius: 34.3408px;
+}
+.contactUsFormTitle {
+  font-family: 'Righteous';
+  font-weight: 400;
+  font-size: 36px;
+  color: #454238;
+}
+.contactUsFormDiv {
+  width: 100%;
+}
+.contactUsInputContainer {
+  padding: 2% 0;
+}
+.contactUsGridContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.contactUsInputDiv {
+  margin: 3% 0;
+  width: 100%;
+}
+.contactUsInputDiv p {
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #454238;
+  margin-bottom: 2%;
+}
+.contactUsInputDiv input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5%;
+  width: 100%;
+  border: 2px solid #e1e1e1;
+  border-radius: 20px;
+}
+.contactUsTextAreaDiv {
+  margin: 3% 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 5%;
+  width: 100%;
+  border: 2px solid #e1e1e1;
+  border-radius: 20px;
+}
+.contactUsTextAreaDiv input {
+  border: none;
+}
+.contactUsTextAreaDiv p {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #919b9b;
+  margin-top: 2%;
+}
+::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #919b9b;
+}
+.contactUsBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactUsBtnContainer p {
+  width: 60%;
+  font-weight: 500;
+  font-size: 16px;
+  color: #919b9b;
+}
+.contactUsBtnDiv {
+  width: 20%;
+}
+.contactUsBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 32px;
+  background: linear-gradient(108.92deg, #ff403e 14.41%, #ff8145 87.23%);
+  border-radius: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.attachFileIcon {
+  transform: rotate(45deg);
+  color: #2a7ff8;
+}
+@media only screen and (max-width: 1024px) {
+  .contactUsBtnContainer p {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contactUsInputDiv input {
+    padding: 3% 5%;
+  }
+  .contactUsBtnContainer {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contactUsBtnContainer p {
+    width: 100%;
+    text-align: center;
+  }
+  .contactUsBtnDiv {
+    margin-top: 3%;
+    width: 50%;
+  }
+}

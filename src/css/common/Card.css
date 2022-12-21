@@ -31,6 +31,9 @@
 .cardHeaderIconDiv {
   width: 25%;
 }
+.cardHeaderIconDiv img {
+  width: 90%;
+}
 .cardHeaderTitle {
   font-weight: 500;
   font-size: 18px;
@@ -170,5 +173,13 @@
   .cardContainerLite {
     margin: 5% 0;
     padding: 5% 5.3%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .cardContainer {
+    width: 95%;
+  }
+  .cardContainerLite {
+    width: 95%;
   }
 }
