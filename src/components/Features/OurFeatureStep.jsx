@@ -12,15 +12,10 @@ function OurFeatureStep(props) {
           <p className="OurFeatures_heading">{props.ourP}</p>
           <div className="OurFeatures_li_div">
             <li className="OurFeatures_li">{props.textLi}</li>
-            {/* <li className="OurFeatures_li">{props.textLi2}</li>
-            <li className="OurFeatures_li">{props.textLi3}</li>
-            <li className="OurFeatures_li">{props.textLi4}</li> */}
             {props.textLi2 && <li className="OurFeatures_li">{props.textLi2}</li>}
             {props.textLi3 && <li className="OurFeatures_li">{props.textLi3}</li>}
             {props.textLi4 && <li className="OurFeatures_li">{props.textLi4}</li>}
             {props.textLi5 && <li className="OurFeatures_li">{props.textLi5}</li>}
-
-            {/* <li className="OurFeatures_li">{props.textLi5}</li> */}
             {props.textLi6 && <li className="OurFeatures_li">{props.textLi6}</li>}
           </div>
           <button type="button" className="OurFeatures_btn">
