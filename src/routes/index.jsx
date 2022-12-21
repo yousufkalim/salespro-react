@@ -12,6 +12,7 @@ import BusinessInfo from '../containers/BusinessInfo';
 // import BillingInfo from '../containers/BillingInfo';
 import ThankYou from '../containers/ThankYou';
 import Login from '../containers/Login';
+import ContactUs from '../containers/ContactUs';
 
 function Index() {
   return (
@@ -24,6 +25,7 @@ function Index() {
       {/* <Route path="/billinginfo" element={<BillingInfo />} /> */}
       <Route path="/thankyou" element={<ThankYou />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/contactus" element={<ContactUs />} />
     </Routes>
   );
 }

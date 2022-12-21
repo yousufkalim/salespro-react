@@ -24,7 +24,7 @@ export default function Home() {
         <MobileApp />
       </div>
       <OneTool />
-      <ClientTestimonial />
+      <ClientTestimonial freeTrail />
       <AskedQuestions />
       <Footer />
     </div>

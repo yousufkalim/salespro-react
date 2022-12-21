@@ -21,6 +21,8 @@
 @import url('./billingInfo/BillingInfo.css');
 @import url('./thankyou/ThankYou.css');
 @import url('./login/Login.css');
+@import url('./contactus/ContactUsSection.css');
+@import url('./contactus/ContactFrom.css');
 /* Defaults */
 * {
   padding: 0;

@@ -110,4 +110,10 @@
   .askedQuestionsListText {
     font-size: 16px;
   }
+  .askedQuestionsTitleDiv h2 {
+    font-size: 36px;
+  }
+  .askedQuestionsImageDiv {
+    margin: 5% 0;
+  }
 }
