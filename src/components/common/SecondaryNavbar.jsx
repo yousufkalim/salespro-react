@@ -84,10 +84,7 @@ export default function SecondaryNavbar() {
             Signup
           </NavLink>
         </div>
-        <div
-          className="navbarLoginBtn"
-          style={{ marginRight: '5%', background: '#FE7666', padding: '3%' }}
-        >
+        <div className="secNavbarLoginBtn">
           <svg
             width="17"
             height="18"
