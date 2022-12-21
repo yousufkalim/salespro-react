@@ -54,7 +54,7 @@ export default function SecondaryNavbar() {
         </div>
       </div>
       <div className="navbarRightDiv">
-        <NavLink to="/contactus" className="secNavbarContactBtn">
+        <NavLink to="/contactsales" className="secNavbarContactBtn">
           Contact Sales
         </NavLink>
         <div className="navbarSignUpBtn">
