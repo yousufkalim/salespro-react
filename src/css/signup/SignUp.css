@@ -64,9 +64,12 @@
 .login-sentence {
   color: #919b9b;
   margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
 }
 .login {
   color: #ff403e;
+  cursor: pointer;
 }
 .reg-btn-p {
   display: flex;
@@ -89,6 +92,7 @@
   font-size: 16px;
   text-transform: capitalize;
   color: #ffffff;
+  cursor: pointer;
 }
 .submitting-info {
   font-weight: 500;
@@ -98,18 +102,32 @@
 .privacy {
   color: #0051c4;
   text-decoration: underline;
+  cursor: pointer;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
+  .main-pop {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1024px) {
   .main-pop {
     width: 60%;
   }
 }
 @media screen and (max-width: 800px) {
   .main-pop {
-    width: 80%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 500px) {
+  .main-pop-container {
+    height: unset;
+    padding: 19% 0;
+  }
+  .main-pop h1 {
+    font-size: 28px;
+  }
+
   .all-inputs {
     flex-direction: column;
   }

@@ -24,7 +24,7 @@ function Index() {
       <Route path="/businessinfo" element={<BusinessInfo />} />
       <Route path="/thankyou" element={<ThankYou />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/contactsales" element={<Contact />} />
     </Routes>
   );
 }

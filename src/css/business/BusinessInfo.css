@@ -7,7 +7,7 @@
 }
 .link {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 .right-side {
   height: 90vh;
@@ -48,7 +48,7 @@
 }
 .Design-div {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 .startups-div {
   line-height: 30px;
@@ -141,6 +141,9 @@
   justify-content: center;
 }
 @media screen and (max-width: 1200px) {
+  .main-business-container {
+    height: 100vh;
+  }
   .row-data-2 {
     width: 100%;
     margin-bottom: 5%;
@@ -150,9 +153,9 @@
   }
 }
 @media screen and (max-width: 800px) {
-  .main-business-container {
+  /* .main-business-container {
     height: 100vh;
-  }
+  } */
 
   .amount {
     font-size: 40px;
