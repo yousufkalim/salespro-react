@@ -65,6 +65,12 @@ function UnlimitedFeatures() {
                 title="Unlimited SMS"
                 ourP="Salespro Direct SMS capabilities allow you to:"
                 img={OurFeaturesImg}
+                textLi=" Send unlimited SMS messages to prospects directly through Salespro Direct"
+                textLi2="Create automated SMS messages"
+                textLi3="Draft SMS templates to fire out quickly to prospects"
+                textLi4="Write personalized SMS messages for specific prospects"
+                textLi5="Prospect with unlimited outbound SMS campaigns"
+                textLi6="Automate your follow up process"
               />
             )}
             {showCompnent === 2 && (
@@ -72,20 +78,33 @@ function UnlimitedFeatures() {
                 title="Unlimited Email"
                 ourP="Salespro Direct allows you to:"
                 img={OurFeaturesImg2}
+                textLi="Send mass email campaigns"
+                textLi2="Manage all your prospect communications in one easy-access location"
+                textLi3="Build email templates and create automated email sequences"
+                textLi4="Connect your SMTP for custom emails"
+                textLi5="Follow our training to start sending 50,000 emails"
               />
             )}
+
             {showCompnent === 3 && (
               <OurFeatureStep
                 title="Unlimited Ringless Voicemails"
                 ourP="Using our unlimited ringless voicemail feature you can:"
                 img={OurFeaturesImg3}
+                textLi="automate your voicemail process (record once and then drop voicemails with one click)"
+                textLi2="add ringless voicemails inside automated workflows and"
+                textLi3="use during outbound call blitzes to work faster and contact more prospects"
               />
             )}
+
             {showCompnent === 4 && (
               <OurFeatureStep
                 title="Unlimited Website & Funnel Creation"
                 ourP="Host both your company website and funnel out of Salespro Direct. Build conversion optimized funnels within minutes that book loads of sales calls with high intent prospects."
                 img={OurFeaturesImg4}
+                textLi="Simple drag-n-drop page builder"
+                textLi2="Dozens of Pre-built Templates"
+                textLi3="Capture Leads"
               />
             )}
           </div>
