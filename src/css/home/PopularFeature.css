@@ -53,6 +53,9 @@
   color: #0051c4;
   margin-bottom: 2%;
 }
+.popularFeatureListDiv {
+  margin: 2% 0;
+}
 .popularFeatureList {
   font-weight: 500;
   font-size: 18px;
@@ -123,6 +126,9 @@
   display: none !important;
 }
 @media only screen and (max-width: 900px) {
+  .popularFeatureMainDiv {
+    background: linear-gradient(180.01deg, #e0f4ff 5.7%, rgba(255, 255, 255, 0) 77.68%);
+  }
   .popularFeatureSubDiv {
     flex-direction: column-reverse;
   }

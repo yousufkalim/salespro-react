@@ -35,7 +35,6 @@
   font-size: 18px;
   display: flex;
   align-items: center;
-  justify-content: center;
   color: #ffffff;
   opacity: 0.5;
   margin-bottom: 5%;
@@ -47,6 +46,8 @@
   margin: 1% 0;
   line-height: 151%;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 .footerButtonContainer {
   width: 15%;
@@ -167,6 +168,9 @@
 @media only screen and (max-width: 900px) {
   .footerContainer {
     flex-direction: column-reverse;
+  }
+  .footerMenuTitle {
+    justify-content: center;
   }
   .footerLogoContainer {
     justify-content: center;

@@ -2,18 +2,18 @@
   width: 100%;
   padding: 5%;
 }
-.choosePlanHeadingDiv {
+.sectionHeaderDiv {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
-.choosePlanHeadingTitle {
+.sectionHeaderTitle {
   font-weight: 700;
   font-size: 18px;
   color: #ff403e;
 }
-.choosePlanHeadingSubTitle {
+.sectionHeaderSubTitle {
   font-family: 'Righteous';
   font-style: normal;
   font-weight: 400;
@@ -22,7 +22,7 @@
   margin: 0.5%;
   width: 100%;
 }
-.choosePlanMiddleHeadingDesp {
+.sectionHeaderDesp {
   font-weight: 400;
   font-size: 18px;
   color: #919b9b;
@@ -42,26 +42,26 @@
   background-size: contain;
 }
 @media only screen and (max-width: 1366px) {
-  .choosePlanMiddleHeadingDesp {
+  .sectionHeaderDesp {
     width: 80%;
   }
 }
 @media only screen and (max-width: 900px) {
-  .choosePlanHeadingDiv {
+  .sectionHeaderDiv {
     margin: 5% 0;
   }
   .choosePlanCardSubDiv {
     flex-direction: column;
   }
-  .choosePlanHeadingTitle {
+  .sectionHeaderTitle {
     font-size: 16px;
   }
-  .choosePlanHeadingSubTitle {
+  .sectionHeaderSubTitle {
     font-size: 35px;
   }
 }
 @media only screen and (max-width: 600px) {
-  .choosePlanMiddleHeadingDesp {
+  .sectionHeaderDesp {
     width: 100%;
   }
 }
