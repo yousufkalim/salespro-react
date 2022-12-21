@@ -1,14 +1,13 @@
 // Init
 import React from 'react';
 import OneToolImage from '../../assets/images/one_tool.svg';
+import SectionHeader from '../common/SectionHeader';
 
 export default function OneTool() {
   return (
     <div className="oneToolContainer">
-      <div className="choosePlanHeadingDiv">
-        <p className="choosePlanHeadingTitle">ALL-IN-ONE TOOL</p>
-        <p className="choosePlanHeadingSubTitle">Reduce your Sales tools budget by 97% !</p>
-      </div>
+      <SectionHeader title="ALL-IN-ONE TOOL" subTitle="Reduce your Sales tools budget by 97% !" />
+
       <div className="oneToolContentDiv">
         <div className="oneToolInfoBoxLeft">
           <p>Per Month</p>

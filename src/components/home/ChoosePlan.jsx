@@ -1,18 +1,17 @@
 // Init
 import * as React from 'react';
 import Card from '../common/Card';
+import SectionHeader from '../common/SectionHeader';
 
 export default function ChoosePlan() {
   return (
     <div className="choosePlanContainer">
-      <div className="choosePlanHeadingDiv">
-        <p className="choosePlanHeadingTitle">CHOOSE YOUR PLAN</p>
-        <p className="choosePlanHeadingSubTitle">Affordable pricing plans</p>
-        <p className="choosePlanMiddleHeadingDesp">
-          Whether you are starting your venture or you have a well established sales team, we have
-          the right plan for you !
-        </p>
-      </div>
+      <SectionHeader
+        title="CHOOSE YOUR PLAN"
+        subTitle="Affordable pricing plans"
+        desp="Whether you are starting your venture or you have a well established sales team, we have
+          the right plan for you !"
+      />
       <div className="choosePlanCardDiv">
         <div className="choosePlanCardSubDiv">
           <Card

@@ -1,6 +1,3 @@
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/no-extraneous-dependencies */
 // Init
 import * as React from 'react';
 import PropTypes from 'prop-types';
@@ -8,10 +5,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import DoneIcon from '@mui/icons-material/Done';
-import { Link } from 'react-router-dom';
 import Image from '../../assets/images/popular_feature.svg';
 import SMS from '../../assets/images/sms_image.svg';
+import PopularFeatureBody from './PopularFeatureBody';
 
 const items = [
   {
@@ -41,6 +37,7 @@ function TabPanel(props) {
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...other}
     >
       {value === index && (
@@ -53,7 +50,6 @@ function TabPanel(props) {
 }
 
 TabPanel.propTypes = {
-  children: PropTypes.node,
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
 };
@@ -65,8 +61,8 @@ function a11yProps(index) {
   };
 }
 export default function PopularFeature() {
-  const [value, setValue] = React.useState(0);
   const [activeId, setactiveId] = React.useState(0);
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -83,201 +79,70 @@ export default function PopularFeature() {
                 <Tab
                   onClick={(event) => setactiveId(event.target.id)}
                   className={`${
-                    `simple-tab-${val?.id}` === activeId || val?.id === activeId
+                    // eslint-disable-next-line eqeqeq
+                    `simple-tab-${val?.id}` == activeId || val?.id == activeId
                       ? 'popularFeatureTabsContainerActive'
                       : 'popularFeatureTabsContainer '
                   }`}
                   label={val?.text}
+                  // eslint-disable-next-line react/jsx-props-no-spreading
                   {...a11yProps(index)}
                 />
               ))}
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <div className="popularFeatureSubDiv">
-              <div className="popularFeatureTextDiv">
-                <p className="popularFeatureHeading">
-                  Auto-Dialing <br /> System
-                </p>
-                <p className="popularFeatureDesp">
-                  Salespro Direct comes equipped with a PowerDialer that automatically dials your
-                  list of leads ($150/mo retail value). The PowerDialer immediately starts calling
-                  the next person until you get a prospect on the phone. On average, Salespro Direct
-                  users are able to make 60-100 calls per hour
-                </p>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Call up to 100 prospects a hour</p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Call from mulitple numbers</p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Record & Track all Calls Made</p>
-                </div>
-
-                <div className="popularFeatureButton">Start Your Free Trial</div>
-                <Link to="/features" className="popularFeatureFeatureBtn">
-                  See all features
-                </Link>
-              </div>
-              <div className="popularFeatureImgDiv">
-                <img src={Image} alt="popular feature" />
-              </div>
-            </div>
+            <PopularFeatureBody
+              heading="Auto-Dialing System"
+              desp="Salespro Direct comes equipped with a PowerDialer that automatically dials your
+              list of leads ($150/mo retail value). The PowerDialer immediately starts calling
+              the next person until you get a prospect on the phone. On average, Salespro Direct
+              users are able to make 60-100 calls per hour"
+              point1="Call up to 100 prospects a hour"
+              point2="Call from mulitple numbers"
+              point3="Record & Track all Calls Made"
+              image={Image}
+            />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <div className="popularFeatureSubDiv">
-              <div className="popularFeatureTextDiv">
-                <p className="popularFeatureHeading">Unlimited SMS</p>
-                <p className="popularFeatureDesp">
-                  Tired of being limited on the volume of SMS campaigns you can send, using our
-                  proven strategies you can send truly unlimited sms campaigns.
-                </p>
-                <p className="popularFeatureSubDesp">
-                  Salespro Direct SMS capabilities allow you to
-                </p>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">
-                    Send unlimited SMS messages to prospects directly through Salespro Direct
-                  </p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Create automated SMS messages</p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">
-                    Draft SMS templates to fire out quickly to prospects
-                  </p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">
-                    Write personalized SMS messages for specific prospects
-                  </p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">
-                    Prospect with unlimited outbound SMS campaigns
-                  </p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Automate your follow up process</p>
-                </div>
-
-                <div className="popularFeatureButton">Start Your Free Trial</div>
-
-                <Link to="/features" className="popularFeatureFeatureBtn">
-                  See all features
-                </Link>
-              </div>
-              <div className="popularFeatureImgDiv">
-                <img src={SMS} alt="Unlimited sms" />
-              </div>
-            </div>
+            <PopularFeatureBody
+              heading="Unlimited SMS"
+              desp="Tired of being limited on the volume of SMS campaigns you can send, using our proven strategies you can send truly unlimited sms campaigns."
+              listHeading="Salespro Direct SMS capabilities allow you to"
+              point1="Send unlimited SMS messages to prospects directly through Salespro Direct"
+              point2="Create automated SMS messages"
+              point3="Draft SMS templates to fire out quickly to prospects"
+              point4="Write personalized SMS messages for specific prospects"
+              point5="Prospect with unlimited outbound SMS campaigns"
+              point6="Automate your follow up process"
+              image={SMS}
+            />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <div className="popularFeatureSubDiv">
-              <div className="popularFeatureTextDiv">
-                <p className="popularFeatureHeading">Integrated CRM</p>
-                <p className="popularFeatureDesp">
-                  Salespro Direct comes equipped with a PowerDialer that automatically dials your
-                  list of leads ($150/mo retail value). The PowerDialer immediately starts calling
-                  the next person until you get a prospect on the phone. On average, Salespro Direct
-                  users are able to make 60-100 calls per hour
-                </p>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Call up to 100 prospects a hour</p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Call from mulitple numbers</p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Record & Track all Calls Made</p>
-                </div>
-
-                <div className="popularFeatureButton">Start Your Free Trial</div>
-                <Link to="/features" className="popularFeatureFeatureBtn">
-                  See all features
-                </Link>
-              </div>
-              <div className="popularFeatureImgDiv">
-                <img src={Image} alt="side diagram" />
-              </div>
-            </div>
+            <PopularFeatureBody
+              heading="Integrated CRM"
+              desp="Salespro Direct comes equipped with a PowerDialer that automatically dials your
+              list of leads ($150/mo retail value). The PowerDialer immediately starts calling
+              the next person until you get a prospect on the phone. On average, Salespro Direct
+              users are able to make 60-100 calls per hour"
+              point1="Call up to 100 prospects a hour"
+              point2="Call from mulitple numbers"
+              point3="Record & Track all Calls Made"
+              image={Image}
+            />
           </TabPanel>
           <TabPanel value={value} index={3}>
-            <div className="popularFeatureSubDiv">
-              <div className="popularFeatureTextDiv">
-                <p className="popularFeatureHeading">Automation</p>
-                <p className="popularFeatureDesp">
-                  Salespro Direct comes equipped with a PowerDialer that automatically dials your
-                  list of leads ($150/mo retail value). The PowerDialer immediately starts calling
-                  the next person until you get a prospect on the phone. On average, Salespro Direct
-                  users are able to make 60-100 calls per hour
-                </p>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Call up to 100 prospects a hour</p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Call from mulitple numbers</p>
-                </div>
-                <div style={{ display: 'flex' }}>
-                  <div>
-                    <DoneIcon sx={{ color: '#ff403e' }} />
-                  </div>
-                  <p className="popularFeatureList">Record & Track all Calls Made</p>
-                </div>
-
-                <div className="popularFeatureButton">Start Your Free Trial</div>
-                <Link to="/features" className="popularFeatureFeatureBtn">
-                  See all features
-                </Link>
-              </div>
-              <div className="popularFeatureImgDiv">
-                <img src={Image} alt="popular" />
-              </div>
-            </div>
+            <PopularFeatureBody
+              heading="Automation"
+              desp="Salespro Direct comes equipped with a PowerDialer that automatically dials your
+              list of leads ($150/mo retail value). The PowerDialer immediately starts calling
+              the next person until you get a prospect on the phone. On average, Salespro Direct
+              users are able to make 60-100 calls per hour"
+              point1="Call up to 100 prospects a hour"
+              point2="Call from mulitple numbers"
+              point3="Record & Track all Calls Made"
+              image={Image}
+            />
           </TabPanel>
         </Box>
       </div>

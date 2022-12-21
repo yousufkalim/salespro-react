@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navbarRightDiv">
-        <NavLink to="/contactus" className="navbarContactBtn">
+        <NavLink to="/contactsales" className="navbarContactBtn">
           Contact sales
         </NavLink>
         <div className="navbarSignUpBtn">
